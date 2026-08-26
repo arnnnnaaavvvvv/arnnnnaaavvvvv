@@ -35,38 +35,36 @@ I am a Computer Science undergraduate (3rd sem, Chandigarh University UP) archit
     <td width="50%" valign="top">
       <h4>⚡ Full-Stack Development</h4>
       <ul>
-        <li><b>Frontend:</b> Next.js 14, TypeScript, Tailwind CSS, Framer Motion</li>
-        <li><b>Backend:</b> FastAPI, NestJS, Node.js, Python</li>
-        <li><b>Real-time:</b> Socket.IO, Redis Streams, WebSockets</li>
+        <li><b>Frontend:</b> React, Next.js, Vite, Tailwind CSS</li>
+        <li><b>Backend:</b> Spring Boot, Express, FastAPI</li>
+        <li><b>Languages:</b> Java, Python, TypeScript, JavaScript</li>
       </ul>
     </td>
     <td width="50%" valign="top">
       <h4>🤖 AI/ML & LLM Systems</h4>
       <ul>
-        <li><b>Orchestration:</b> LLM orchestration pipelines, RAG architecture</li>
+        <li><b>Model Access:</b> OpenAI (embeddings + GPT), Google Gemini API</li>
         <li><b>Vector Search:</b> Qdrant</li>
-        <li><b>Model Access:</b> OpenAI embeddings, GPT-4o</li>
-        <li><b>Applications:</b> Multi-agent systems, AI explainability layers</li>
+        <li><b>Applications:</b> RAG architecture, multi-agent systems, deterministic explainable scoring engines</li>
       </ul>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h4>☁️ Cloud & DevOps</h4>
+      <h4>🗺️ Data & Geospatial</h4>
       <ul>
-        <li><b>Infrastructure:</b> Docker, Kubernetes, Terraform (AWS primary)</li>
-        <li><b>CI/CD:</b> Jenkins, GitHub Actions</li>
-        <li><b>Monitoring:</b> Prometheus, Grafana</li>
-        <li><b>Auth:</b> JWT, OAuth 2.0, Firebase Authentication</li>
+        <li><b>Databases:</b> PostgreSQL, TimescaleDB, Redis</li>
+        <li><b>Geospatial:</b> PostGIS, Shapely</li>
+        <li><b>Real-time:</b> WebSockets, Redis Pub/Sub</li>
       </ul>
     </td>
     <td width="50%" valign="top">
-      <h4>🗄️ Data & Systems Architecture</h4>
+      <h4>⚙️ Infrastructure & Testing</h4>
       <ul>
-        <li><b>Databases:</b> PostgreSQL, PostGIS, Redis</li>
-        <li><b>Geospatial:</b> PostGIS-driven location/risk scoring</li>
-        <li><b>External Integrations:</b> Broker/market APIs (Alpaca, KuCoin), live weather/hazard feeds</li>
-        <li><b>Architecture:</b> Multi-tenant systems, sub-100ms real-time data pipelines</li>
+        <li><b>Containers/Orchestration:</b> Docker, Kubernetes</li>
+        <li><b>Auth:</b> Firebase Admin SDK, JWT (HMAC-SHA256)</li>
+        <li><b>Testing:</b> pytest</li>
+        <li><b>Mapping/Client:</b> Leaflet.js, IndexedDB</li>
       </ul>
     </td>
   </tr>
