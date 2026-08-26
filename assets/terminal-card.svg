@@ -105,7 +105,7 @@
       <text x="18" y="42" class="meta-text">AI-Integrated Full Stack Systems · Smart India Hackathon</text>
 
       <!-- Email -->
-      <path d="M1.75 2A1.75 1.75 0 000 3.75v.74a.75.75 0 000 .03v7.73C0 13.22.78 14 1.75 14h12.5c.97 0 1.75-.78 1.75-1.75V4.52a.75.75 0 000-.03v-.74C16 2.78 15.22 2 14.25 2H1.75zM14.5 4.07v-.32a.25.25 0 00-.25-.25H1.75a.25.25 0 00-.25.25v.32L8 7.88l6.5-3.81z" fill="#BABABA" transform="translate(0, 53) scale(0.8)"/>
+      <path d="M0.5 5.8v6.7a2 2 0 002 2h11a2 2 0 002-2V5.8l-7 4.3a1 1 0 01-1 0L0.5 5.8z M15.5 3.5v-.2a2 2 0 00-2-2h-11a2 2 0 00-2 2v.2l7.5 4.6 7.5-4.6z" fill="#BABABA" transform="translate(0, 53) scale(0.8)"/>
       <text x="18" y="63" class="meta-text">arnav152007@gmail.com</text>
     </g>
 
@@ -174,7 +174,7 @@
       <!-- Email -->
       <a href="mailto:arnav152007@gmail.com">
         <circle cx="80" cy="12" r="13" fill="#262626" stroke="#595959" stroke-width="0.8"/>
-        <path d="M1.75 2A1.75 1.75 0 000 3.75v.74a.75.75 0 000 .03v7.73C0 13.22.78 14 1.75 14h12.5c.97 0 1.75-.78 1.75-1.75V4.52a.75.75 0 000-.03v-.74C16 2.78 15.22 2 14.25 2H1.75zM14.5 4.07v-.32a.25.25 0 00-.25-.25H1.75a.25.25 0 00-.25.25v.32L8 7.88l6.5-3.81z" fill="#D4D4D4" transform="translate(71.5, 3.5) scale(1.05)"/>
+        <path d="M2 9.2v9.3a2.5 2.5 0 002.5 2.5h15a2.5 2.5 0 002.5-2.5V9.2l-9.3 5.8a1.5 1.5 0 01-1.4 0L2 9.2z M22 6.5v-.5a2.5 2.5 0 00-2.5-2.5h-15A2.5 2.5 0 002 6v.5l10 6.25 10-6.25z" fill="#D4D4D4" transform="translate(71, 2.8) scale(0.75)"/>
       </a>
     </g>
   </g>
