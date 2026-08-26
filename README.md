@@ -1,6 +1,10 @@
 <div align="center">
 
-<img src="assets/hero-card.svg" width="850" alt="Arnav Singh Profile Card" />
+<p align="center">
+  <img src="assets/ascii-portrait.gif" width="365" alt="Arnav Singh ASCII Portrait" />
+  &nbsp;&nbsp;
+  <img src="assets/terminal-card.svg" width="455" alt="Arnav Singh Terminal Profile" />
+</p>
 
 <br />
 
