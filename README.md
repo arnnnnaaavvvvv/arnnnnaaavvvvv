@@ -18,48 +18,13 @@ I am a Computer Science undergraduate (3rd sem, Chandigarh University UP) archit
 
 ---
 
-### 🛠️ Technical Matrix
+## 🛠️ Languages & Tools
 
-<table>
-  <tr>
-    <td width="22%"><b>Backend & Systems</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
-      <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-      <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-      <img src="https://img.shields.io/badge/PostGIS-336791?style=flat-square&logo=postgresql&logoColor=white" alt="PostGIS" />
-      <img src="https://img.shields.io/badge/Redis_Streams-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
-    </td>
-  </tr>
-  <tr>
-    <td><b>AI & Data Pipelines</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/Qdrant-Vector_DB-DC2626?style=flat-square&logo=qdrant&logoColor=white" alt="Qdrant" />
-      <img src="https://img.shields.io/badge/RAG-Semantic_Search-059669?style=flat-square&logo=databricks&logoColor=white" alt="RAG" />
-      <img src="https://img.shields.io/badge/Rule_Engines-Deterministic_AST-4F46E5?style=flat-square&logo=probot&logoColor=white" alt="Rule Engine" />
-      <img src="https://img.shields.io/badge/LLM_Orchestration-Pipelines-0D9488?style=flat-square&logo=openai&logoColor=white" alt="LLM" />
-    </td>
-  </tr>
-  <tr>
-    <td><b>Frontend & UI</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/Next.js_14-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
-      <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
-      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-      <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" alt="Tailwind" />
-    </td>
-  </tr>
-  <tr>
-    <td><b>Infra & Tooling</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
-      <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
-      <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
-      <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel" />
-      <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black" alt="Firebase" />
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=c,cpp,java,py,ts,js,html,css,react,nextjs,tailwind,nodejs,nestjs,fastapi,express,postgres,redis,aws,docker,kubernetes,terraform,git,githubactions,jenkins,linux,firebase&perline=13&theme=dark" alt="Languages & Tools" />
+  </a>
+</p>
 
 ---
 
@@ -171,6 +136,24 @@ I am a Computer Science undergraduate (3rd sem, Chandigarh University UP) archit
     <img src="https://ghchart.rshah.org/22D3EE/arnnnnaaavvvvv" width="700" alt="Arnav's GitHub Contribution Chart" />
   </p>
 </div>
+
+---
+
+## 🤝 Connect With Me
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/arnav-singh-986722252" target="_blank">
+    <img src="https://skillicons.dev/icons?i=linkedin&theme=dark" alt="LinkedIn" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="mailto:arnav152007@gmail.com">
+    <img src="https://skillicons.dev/icons?i=gmail&theme=dark" alt="Gmail" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/arnnnnaaavvvvv" target="_blank">
+    <img src="https://skillicons.dev/icons?i=github&theme=dark" alt="GitHub" />
+  </a>
+</p>
 
 ---
 
