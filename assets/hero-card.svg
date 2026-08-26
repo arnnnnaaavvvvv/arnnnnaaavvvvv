@@ -17,6 +17,37 @@
       <stop offset="0%" stop-color="#1E2633"/>
       <stop offset="100%" stop-color="#131923"/>
     </linearGradient>
+
+    <!-- Typewriter ClipPaths -->
+    <clipPath id="hero-type-p1">
+      <rect x="82" y="82" width="0" height="22">
+        <animate attributeName="width" 
+          values="0; 0; 155; 155; 0; 0; 0; 0" 
+          keyTimes="0; 0.03; 0.22; 0.30; 0.33; 0.34; 0.99; 1" 
+          dur="9.5s" 
+          repeatCount="indefinite" />
+      </rect>
+    </clipPath>
+
+    <clipPath id="hero-type-p2">
+      <rect x="82" y="82" width="0" height="22">
+        <animate attributeName="width" 
+          values="0; 0; 0; 150; 150; 0; 0; 0" 
+          keyTimes="0; 0.33; 0.36; 0.55; 0.63; 0.66; 0.67; 1" 
+          dur="9.5s" 
+          repeatCount="indefinite" />
+      </rect>
+    </clipPath>
+
+    <clipPath id="hero-type-p3">
+      <rect x="82" y="82" width="0" height="22">
+        <animate attributeName="width" 
+          values="0; 0; 0; 325; 325; 0; 0" 
+          keyTimes="0; 0.66; 0.69; 0.88; 0.96; 0.99; 1" 
+          dur="9.5s" 
+          repeatCount="indefinite" />
+      </rect>
+    </clipPath>
   </defs>
 
   <style>
@@ -116,9 +147,32 @@
       <text x="0" y="30" class="sub-greeting">Hi 👋 I'm</text>
       <text x="0" y="68" class="heading-name">Arnav Singh</text>
 
-      <!-- Prompt Line -->
+      <!-- Prompt Line with Animated Typewriter -->
       <text x="0" y="98" class="cmd-prompt">$ whoami</text>
-      <text x="82" y="98" class="cmd-text">Full-Stack + AI Systems Builder</text>
+
+      <!-- Typewriter Texts -->
+      <g clip-path="url(#hero-type-p1)">
+        <text x="82" y="98" class="cmd-text">Full-Stack Engineer</text>
+      </g>
+      <g clip-path="url(#hero-type-p2)">
+        <text x="82" y="98" class="cmd-text">AI Systems Builder</text>
+      </g>
+      <g clip-path="url(#hero-type-p3)">
+        <text x="82" y="98" class="cmd-text">Full-Stack Engineer · AI Systems Builder</text>
+      </g>
+
+      <!-- Terminal Cursor -->
+      <rect y="86" width="7.5" height="15" fill="#22D3EE" rx="1">
+        <animate attributeName="x" 
+          values="82; 82; 237; 237; 82; 82; 232; 232; 82; 82; 407; 407; 82; 82" 
+          keyTimes="0; 0.03; 0.22; 0.30; 0.33; 0.36; 0.55; 0.63; 0.66; 0.69; 0.88; 0.96; 0.99; 1" 
+          dur="9.5s" 
+          repeatCount="indefinite" />
+        <animate attributeName="opacity" 
+          values="1; 0; 1; 0; 1; 0; 1" 
+          dur="0.7s" 
+          repeatCount="indefinite" />
+      </rect>
 
       <!-- Metadata List -->
       <g transform="translate(0, 122)">
