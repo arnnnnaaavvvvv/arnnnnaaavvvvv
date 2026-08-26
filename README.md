@@ -24,11 +24,11 @@
 
 ---
 
-### ⚡ About & Positioning
+### ⚡ Overview
 
-I am a Computer Science undergraduate (B.Tech CSE Core, Chandigarh University UP) architecting high-throughput full-stack platforms and deterministic AI systems. My work focuses on building reliable, explainable backends and low-latency data pipelines using **Next.js 14, FastAPI, PostgreSQL/PostGIS, Redis, and Qdrant**. I prioritize deterministic rule engines and verifiable RAG over blackbox heuristics.
+I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University UP) building full-stack, AI-integrated systems with a focus on architecture that's inspectable rather than black-box. My backend work spans Spring Boot, Express, and FastAPI depending on the problem; my data layer combines PostgreSQL, PostGIS, and Redis for geospatial and real-time workloads; and my AI systems are built around Qdrant-backed retrieval and explainable scoring, not opaque model outputs alone. I favor deterministic, rule-based engines where correctness and traceability matter more than raw prediction — and RAG pipelines where grounded retrieval beats hallucination-prone generation.
 
-> **Current Focus:** Engineering high-resilience geospatial and real-time systems, targeting high-signal Software Engineering / Systems roles.
+> **Current Focus:** Designing explainable, production-grade systems with deliberate, traceable architecture — building toward high-signal roles in Software Engineering and AI Systems.
 
 ---
 
