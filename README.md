@@ -63,6 +63,52 @@ I am a Computer Science undergraduate (3rd sem, Chandigarh University UP) archit
 
 ---
 
+### 🧩 Core Competencies
+
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h4>⚡ Full-Stack Development</h4>
+      <ul>
+        <li><b>Frontend:</b> Next.js 14, TypeScript, Tailwind CSS, Framer Motion</li>
+        <li><b>Backend:</b> FastAPI, NestJS, Node.js, Python</li>
+        <li><b>Real-time:</b> Socket.IO, Redis Streams, WebSockets</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🤖 AI/ML & LLM Systems</h4>
+      <ul>
+        <li><b>Orchestration:</b> LLM orchestration pipelines, RAG architecture</li>
+        <li><b>Vector Search:</b> Qdrant</li>
+        <li><b>Model Access:</b> OpenAI embeddings, GPT-4o</li>
+        <li><b>Applications:</b> Multi-agent systems, AI explainability layers</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>☁️ Cloud & DevOps</h4>
+      <ul>
+        <li><b>Infrastructure:</b> Docker, Kubernetes, Terraform (AWS primary)</li>
+        <li><b>CI/CD:</b> Jenkins, GitHub Actions</li>
+        <li><b>Monitoring:</b> Prometheus, Grafana</li>
+        <li><b>Auth:</b> JWT, OAuth 2.0, Firebase Authentication</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🗄️ Data & Systems Architecture</h4>
+      <ul>
+        <li><b>Databases:</b> PostgreSQL, PostGIS, Redis</li>
+        <li><b>Geospatial:</b> PostGIS-driven location/risk scoring</li>
+        <li><b>External Integrations:</b> Broker/market APIs (Alpaca, KuCoin), live weather/hazard feeds</li>
+        <li><b>Architecture:</b> Multi-tenant systems, sub-100ms real-time data pipelines</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
 ### 🚀 Featured Engineering Systems
 
 #### **1. IGNITE — Dynamic Tourist Safety & Smart Route Engine**
