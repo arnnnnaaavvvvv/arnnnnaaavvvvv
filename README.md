@@ -3,7 +3,7 @@
 <p align="center">
   <img src="assets/ascii-portrait.gif" height="390" alt="Arnav Singh ASCII Portrait" />
   &nbsp;&nbsp;
-  <img src="assets/terminal-card.svg" height="390" alt="Arnav Singh Terminal Profile" />
+  <img src="assets/terminal-card.svg?v=2" height="390" alt="Arnav Singh Terminal Profile" />
 </p>
 
 <br />
