@@ -1,15 +1,19 @@
 <div align="center">
 
-# Arnav Singh
+<img src="assets/hero-card.svg" width="850" alt="Arnav Singh Profile Card" />
 
-<a href="https://readme-typing-svg.demolab.com">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=900&color=22D3EE&background=00000000&center=true&vCenter=true&width=580&lines=Full-Stack+AI+Engineer;Building+Production-Grade+Intelligent+Systems;Endlessly+Curious+About+New+Technologies;Architecting+with+Next.js%2C+FastAPI+%26+RAG" alt="Typing SVG" />
-</a>
-
-<br /><br />
+<br />
 
 <p align="center">
-  <img src="assets/ascii-portrait.gif" width="600" alt="Arnav Singh ASCII Portrait" />
+  <a href="https://github.com/arnnnnaaavvvvv"><img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+  &nbsp;
+  <a href="https://www.linkedin.com/in/arnav-singh-986722252"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  &nbsp;
+  <a href="mailto:arnav152007@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  &nbsp;
+  <a href="https://web-frontend-three-gamma.vercel.app/"><img src="https://img.shields.io/badge/Live_Demo-22D3EE?style=for-the-badge&logo=vercel&logoColor=black" alt="Live Demo" /></a>
+  &nbsp;
+  <img src="https://komarev.com/ghpvc/?username=arnnnnaaavvvvv&label=Profile%20Views&color=22D3EE&style=for-the-badge" alt="Profile Views" />
 </p>
 
 </div>
