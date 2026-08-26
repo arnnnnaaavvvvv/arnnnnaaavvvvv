@@ -124,7 +124,7 @@
       <g transform="translate(0, 122)">
         <!-- Location -->
         <path d="M8 1.5C4.96 1.5 2.5 3.96 2.5 7c0 4.12 4.7 8.9 5.05 9.25.26.26.65.26.9 0 .35-.35 5.05-5.13 5.05-9.25 0-3.04-2.46-5.5-5.5-5.5zm0 7.5c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" fill="#22D3EE" transform="translate(0, -11) scale(0.9)"/>
-        <text x="22" y="0" class="meta-text">Chandigarh University · India</text>
+        <text x="22" y="0" class="meta-text">Lucknow, India</text>
 
         <!-- Education -->
         <path d="M8 1.75L0 5.5l8 3.75 6.5-3.05v4.55h1.5V5.5L8 1.75zM2.5 8.2v3.3c0 1.93 2.46 3.5 5.5 3.5s5.5-1.57 5.5-3.5V8.2L8 10.75 2.5 8.2z" fill="#22D3EE" transform="translate(0, 13) scale(0.9)"/>
