@@ -3,7 +3,7 @@
 # Arnav Singh
 
 <a href="https://readme-typing-svg.demolab.com">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=900&color=00E599&background=0D111700&center=true&vCenter=true&width=620&lines=Full-Stack+%2B+AI+Systems+Builder;Architecting+Deterministic+Backends+%26+RAG;Sub-100ms+Event-Driven+Architectures;Smart+India+Hackathon+(SIH)+2026+Track" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=900&color=22D3EE&background=00000000&center=true&vCenter=true&width=580&lines=Full-Stack+AI+Engineer;Building+Production-Grade+Intelligent+Systems;Endlessly+Curious+About+New+Technologies;Architecting+with+Next.js%2C+FastAPI+%26+RAG" alt="Typing SVG" />
 </a>
 
 <p align="center">
