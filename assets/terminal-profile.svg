@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 440" width="100%" height="100%">
+  <defs>
+    <!-- Grayscale Gradients matching G1 #262626 -> G6 #d4d4d4 -->
+    <linearGradient id="term-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A1A1A"/>
+      <stop offset="100%" stop-color="#121212"/>
+    </linearGradient>
+
+    <linearGradient id="pill-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#262626"/>
+      <stop offset="100%" stop-color="#1C1C1C"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .heading-name {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 31px;
+      font-weight: 800;
+      fill: #FFFFFF;
+      letter-spacing: -0.5px;
+    }
+    .sub-greeting {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      fill: #A1A1A1;
+    }
+    .cmd-prompt {
+      font-family: "SF Mono", Monaco, Menlo, Consolas, "Courier New", monospace;
+      font-size: 13px;
+      font-weight: 700;
+      fill: #D4D4D4;
+    }
+    .cmd-text {
+      font-family: "SF Mono", Monaco, Menlo, Consolas, "Courier New", monospace;
+      font-size: 12.5px;
+      font-weight: 500;
+      fill: #BABABA;
+    }
+    .meta-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      fill: #A1A1A1;
+    }
+    .section-label {
+      font-family: "SF Mono", Monaco, Menlo, Consolas, monospace;
+      font-size: 10px;
+      font-weight: 700;
+      fill: #7F7F7F;
+      letter-spacing: 1.5px;
+    }
+    .pill-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      fill: #D4D4D4;
+    }
+    .term-title {
+      font-family: "SF Mono", Monaco, Menlo, Consolas, monospace;
+      font-size: 11px;
+      fill: #7F7F7F;
+    }
+    .pill {
+      fill: url(#pill-bg);
+      stroke: #595959;
+      stroke-width: 0.9;
+      rx: 12;
+    }
+  </style>
+
+  <!-- Window Container -->
+  <rect width="510" height="440" rx="14" fill="url(#term-bg)" stroke="#595959" stroke-width="1"/>
+
+  <!-- Window Header Bar (G1 #262626) -->
+  <path d="M0 14C0 6.268 6.268 0 14 0h482c7.732 0 14 6.268 14 14v24H0V14z" fill="#262626"/>
+  <circle cx="22" cy="19" r="5" fill="#EF4444"/>
+  <circle cx="38" cy="19" r="5" fill="#F59E0B"/>
+  <circle cx="54" cy="19" r="5" fill="#10B981"/>
+  <text x="255" y="23" text-anchor="middle" class="term-title">arnav@portfolio — zsh</text>
+
+  <!-- Terminal Content -->
+  <g transform="translate(26, 36)">
+    <!-- Greeting & Name -->
+    <text x="0" y="28" class="sub-greeting">Hi 👋 I'm</text>
+    <text x="0" y="62" class="heading-name">Arnav Singh</text>
+
+    <!-- Prompt Line -->
+    <text x="0" y="90" class="cmd-prompt">$ whoami</text>
+    <text x="76" y="90" class="cmd-text">Full-Stack + AI Systems Builder</text>
+
+    <!-- Metadata List -->
+    <g transform="translate(0, 112)">
+      <!-- Location -->
+      <path d="M8 1.5C4.96 1.5 2.5 3.96 2.5 7c0 4.12 4.7 8.9 5.05 9.25.26.26.65.26.9 0 .35-.35 5.05-5.13 5.05-9.25 0-3.04-2.46-5.5-5.5-5.5zm0 7.5c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" fill="#BABABA" transform="translate(0, -10) scale(0.8)"/>
+      <text x="18" y="0" class="meta-text">Lucknow, India</text>
+
+      <!-- Education -->
+      <path d="M8 1.75L0 5.5l8 3.75 6.5-3.05v4.55h1.5V5.5L8 1.75zM2.5 8.2v3.3c0 1.93 2.46 3.5 5.5 3.5s5.5-1.57 5.5-3.5V8.2L8 10.75 2.5 8.2z" fill="#BABABA" transform="translate(0, 11) scale(0.8)"/>
+      <text x="18" y="21" class="meta-text">B.Tech CSE (Core) · Chandigarh University UP</text>
+
+      <!-- Focus -->
+      <path d="M8 0a8 8 0 100 16A8 8 0 008 0zm0 14.5a6.5 6.5 0 110-13 6.5 6.5 0 010 13zm0-10a3.5 3.5 0 100 7 3.5 3.5 0 000-7z" fill="#BABABA" transform="translate(0, 32) scale(0.8)"/>
+      <text x="18" y="42" class="meta-text">AI-Integrated Full Stack Systems</text>
+
+      <!-- Email -->
+      <path d="M0.5 5.8v6.7a2 2 0 002 2h11a2 2 0 002-2V5.8l-7 4.3a1 1 0 01-1 0L0.5 5.8z M15.5 3.5v-.2a2 2 0 00-2-2h-11a2 2 0 00-2 2v.2l7.5 4.6 7.5-4.6z" fill="#BABABA" transform="translate(0, 53) scale(0.8)"/>
+      <text x="18" y="63" class="meta-text">arnav152007@gmail.com</text>
+    </g>
+
+    <!-- Tech Stack Section -->
+    <g transform="translate(0, 204)">
+      <text x="0" y="0" class="section-label">TECH STACK</text>
+      
+      <!-- Row 1 Pills -->
+      <g transform="translate(0, 9)">
+        <rect x="0" y="0" width="62" height="24" class="pill"/>
+        <text x="31" y="16" text-anchor="middle" class="pill-text">Next.js</text>
+
+        <rect x="68" y="0" width="54" height="24" class="pill"/>
+        <text x="95" y="16" text-anchor="middle" class="pill-text">React</text>
+
+        <rect x="128" y="0" width="60" height="24" class="pill"/>
+        <text x="158" y="16" text-anchor="middle" class="pill-text">FastAPI</text>
+
+        <rect x="194" y="0" width="78" height="24" class="pill"/>
+        <text x="233" y="16" text-anchor="middle" class="pill-text">TypeScript</text>
+
+        <rect x="278" y="0" width="60" height="24" class="pill"/>
+        <text x="308" y="16" text-anchor="middle" class="pill-text">Python</text>
+
+        <rect x="344" y="0" width="64" height="24" class="pill"/>
+        <text x="376" y="16" text-anchor="middle" class="pill-text">Tailwind</text>
+
+        <rect x="414" y="0" width="42" height="24" class="pill"/>
+        <text x="435" y="16" text-anchor="middle" class="pill-text">Git</text>
+      </g>
+
+      <!-- Row 2 Pills -->
+      <g transform="translate(0, 39)">
+        <rect x="0" y="0" width="82" height="24" class="pill"/>
+        <text x="41" y="16" text-anchor="middle" class="pill-text">PostgreSQL</text>
+
+        <rect x="88" y="0" width="64" height="24" class="pill"/>
+        <text x="120" y="16" text-anchor="middle" class="pill-text">PostGIS</text>
+
+        <rect x="158" y="0" width="50" height="24" class="pill"/>
+        <text x="183" y="16" text-anchor="middle" class="pill-text">Redis</text>
+
+        <rect x="214" y="0" width="62" height="24" class="pill"/>
+        <text x="245" y="16" text-anchor="middle" class="pill-text">Qdrant</text>
+
+        <rect x="282" y="0" width="60" height="24" class="pill"/>
+        <text x="312" y="16" text-anchor="middle" class="pill-text">Docker</text>
+
+        <rect x="348" y="0" width="62" height="24" class="pill"/>
+        <text x="379" y="16" text-anchor="middle" class="pill-text">Firebase</text>
+      </g>
+    </g>
+
+    <!-- Social Icons Row -->
+    <g transform="translate(0, 302)">
+      <!-- GitHub -->
+      <a href="https://github.com/arnnnnaaavvvvv">
+        <circle cx="12" cy="12" r="13" fill="#262626" stroke="#595959" stroke-width="0.8"/>
+        <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" fill="#D4D4D4" transform="translate(1, 1) scale(0.9)"/>
+      </a>
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/arnav-singh-986722252">
+        <circle cx="46" cy="12" r="13" fill="#262626" stroke="#595959" stroke-width="0.8"/>
+        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2" fill="#D4D4D4" transform="translate(35, 1) scale(0.9)"/>
+      </a>
+      <!-- Email -->
+      <a href="mailto:arnav152007@gmail.com">
+        <circle cx="80" cy="12" r="13" fill="#262626" stroke="#595959" stroke-width="0.8"/>
+        <path d="M2 9.2v9.3a2.5 2.5 0 002.5 2.5h15a2.5 2.5 0 002.5-2.5V9.2l-9.3 5.8a1.5 1.5 0 01-1.4 0L2 9.2z M22 6.5v-.5a2.5 2.5 0 00-2.5-2.5h-15A2.5 2.5 0 002 6v.5l10 6.25 10-6.25z" fill="#D4D4D4" transform="translate(71, 2.8) scale(0.75)"/>
+      </a>
+    </g>
+  </g>
+</svg>
