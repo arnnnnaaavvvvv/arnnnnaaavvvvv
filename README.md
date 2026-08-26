@@ -100,7 +100,7 @@ I am a Computer Science undergraduate (3rd sem, Chandigarh University UP) archit
   <img src="https://img.shields.io/badge/Broker_APIs-Alpaca_%7C_KuCoin-00E599?style=flat-square&logo=bitcoin&logoColor=black" alt="APIs" />
 </p>
 
-[→ Live Demo](https://sirus-opal.vercel.app) &nbsp;|&nbsp; [→ Source Code](https://github.com/arnnnnaaavvvvv/SIRUS) &nbsp;|&nbsp; [→ Architecture Spec](https://github.com/arnnnnaaavvvvv/SIRUS/blob/main/ARCHITECTURE.md)
+[→ Live Demo](https://web-frontend-three-gamma.vercel.app/) &nbsp;|&nbsp; [→ Source Code](https://github.com/arnnnnaaavvvvv/SIRUS) &nbsp;|&nbsp; [→ Architecture Spec](https://github.com/arnnnnaaavvvvv/SIRUS/blob/main/ARCHITECTURE.md)
 
 ---
 
