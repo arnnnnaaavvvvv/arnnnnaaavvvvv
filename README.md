@@ -22,7 +22,7 @@ I am a Computer Science undergraduate (3rd sem, Chandigarh University UP) archit
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=c,cpp,java,py,ts,js,html,css,react,nextjs,tailwind,nodejs,nestjs,fastapi,express,postgres,redis,aws,docker,kubernetes,terraform,git,githubactions,jenkins,linux,firebase&perline=13&theme=dark" alt="Languages & Tools" />
+    <img src="https://skillicons.dev/icons?i=java,py,ts,js,html,css,react,nextjs,vite,tailwind,spring,express,fastapi,postgres,redis,firebase,docker,kubernetes,git,githubactions&perline=10&theme=dark" alt="Languages & Tools" />
   </a>
 </p>
 
@@ -35,9 +35,9 @@ I am a Computer Science undergraduate (3rd sem, Chandigarh University UP) archit
     <td width="50%" valign="top">
       <h4>⚡ Full-Stack Development</h4>
       <ul>
-        <li><b>Frontend:</b> React, Next.js, Vite, Tailwind CSS</li>
+        <li><b>Frontend:</b> Next.js, React, Vite, Tailwind CSS</li>
         <li><b>Backend:</b> Spring Boot, Express, FastAPI</li>
-        <li><b>Languages:</b> Java, Python, TypeScript, JavaScript</li>
+        <li><b>Languages:</b> Java, Python, TypeScript, JavaScript, HTML5, CSS3</li>
       </ul>
     </td>
     <td width="50%" valign="top">
@@ -45,7 +45,7 @@ I am a Computer Science undergraduate (3rd sem, Chandigarh University UP) archit
       <ul>
         <li><b>Model Access:</b> OpenAI (embeddings + GPT), Google Gemini API</li>
         <li><b>Vector Search:</b> Qdrant</li>
-        <li><b>Applications:</b> RAG architecture, multi-agent systems, deterministic explainable scoring engines</li>
+        <li><b>Applications:</b> RAG architecture, multi-agent systems, deterministic explainable scoring</li>
       </ul>
     </td>
   </tr>
@@ -53,8 +53,8 @@ I am a Computer Science undergraduate (3rd sem, Chandigarh University UP) archit
     <td width="50%" valign="top">
       <h4>🗺️ Data & Geospatial</h4>
       <ul>
-        <li><b>Databases:</b> PostgreSQL, TimescaleDB, Redis</li>
-        <li><b>Geospatial:</b> PostGIS, Shapely</li>
+        <li><b>Databases:</b> PostgreSQL, TimescaleDB, PostGIS, Redis</li>
+        <li><b>Geospatial:</b> PostGIS, Shapely, Leaflet.js</li>
         <li><b>Real-time:</b> WebSockets, Redis Pub/Sub</li>
       </ul>
     </td>
@@ -62,9 +62,9 @@ I am a Computer Science undergraduate (3rd sem, Chandigarh University UP) archit
       <h4>⚙️ Infrastructure & Testing</h4>
       <ul>
         <li><b>Containers/Orchestration:</b> Docker, Kubernetes</li>
-        <li><b>Auth:</b> Firebase Admin SDK, JWT (HMAC-SHA256)</li>
+        <li><b>CI/CD & VCS:</b> Git, GitHub Actions</li>
+        <li><b>Auth:</b> Firebase Admin SDK, JWT</li>
         <li><b>Testing:</b> pytest</li>
-        <li><b>Mapping/Client:</b> Leaflet.js, IndexedDB</li>
       </ul>
     </td>
   </tr>
