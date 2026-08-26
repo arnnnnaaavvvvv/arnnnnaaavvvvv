@@ -6,6 +6,12 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=900&color=22D3EE&background=00000000&center=true&vCenter=true&width=580&lines=Full-Stack+AI+Engineer;Building+Production-Grade+Intelligent+Systems;Endlessly+Curious+About+New+Technologies;Architecting+with+Next.js%2C+FastAPI+%26+RAG" alt="Typing SVG" />
 </a>
 
+<br /><br />
+
+<p align="center">
+  <img src="assets/ascii-portrait.svg" width="600" alt="Arnav Singh ASCII Portrait" />
+</p>
+
 </div>
 
 ---
