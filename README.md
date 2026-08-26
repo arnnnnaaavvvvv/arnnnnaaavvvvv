@@ -6,12 +6,6 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=900&color=22D3EE&background=00000000&center=true&vCenter=true&width=580&lines=Full-Stack+AI+Engineer;Building+Production-Grade+Intelligent+Systems;Endlessly+Curious+About+New+Technologies;Architecting+with+Next.js%2C+FastAPI+%26+RAG" alt="Typing SVG" />
 </a>
 
-<p align="center">
-  <a href="mailto:arnavsingh.dev@gmail.com"><img src="https://img.shields.io/badge/Email-Direct_Contact-0D1117?style=flat-square&logo=gmail&logoColor=00E599&labelColor=0D1117" alt="Email" /></a>
-  <a href="https://linkedin.com/in/arnnnnaaavvvvv"><img src="https://img.shields.io/badge/LinkedIn-Connect-0D1117?style=flat-square&logo=linkedin&logoColor=00E599&labelColor=0D1117" alt="LinkedIn" /></a>
-  <a href="https://github.com/arnnnnaaavvvvv"><img src="https://img.shields.io/badge/GitHub-arnnnnaaavvvvv-0D1117?style=flat-square&logo=github&logoColor=00E599&labelColor=0D1117" alt="GitHub" /></a>
-</p>
-
 </div>
 
 ---
