@@ -132,7 +132,7 @@
 
         <!-- Focus -->
         <path d="M8 0a8 8 0 100 16A8 8 0 008 0zm0 14.5a6.5 6.5 0 110-13 6.5 6.5 0 010 13zm0-10a3.5 3.5 0 100 7 3.5 3.5 0 000-7z" fill="#22D3EE" transform="translate(0, 37) scale(0.9)"/>
-        <text x="22" y="48" class="meta-text">AI-Integrated Full Stack Systems · Smart India Hackathon</text>
+        <text x="22" y="48" class="meta-text">AI-Integrated Full Stack Systems</text>
 
         <!-- Email -->
         <path d="M0.5 5.8v6.7a2 2 0 002 2h11a2 2 0 002-2V5.8l-7 4.3a1 1 0 01-1 0L0.5 5.8z M15.5 3.5v-.2a2 2 0 00-2-2h-11a2 2 0 00-2 2v.2l7.5 4.6 7.5-4.6z" fill="#22D3EE" transform="translate(0, 61) scale(0.9)"/>
