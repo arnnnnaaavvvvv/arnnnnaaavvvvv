@@ -3,7 +3,7 @@
 <p align="center">
   <img src="assets/ascii-portrait.gif" height="390" alt="Arnav Singh ASCII Portrait" />
   &nbsp;&nbsp;
-  <img src="assets/terminal-card.svg?v=4" height="390" alt="Arnav Singh Terminal Profile" />
+  <img src="assets/terminal-card.svg?v=5" height="390" alt="Arnav Singh Terminal Profile" />
 </p>
 
 <br />
@@ -26,7 +26,7 @@
 
 ### ⚡ About & Positioning
 
-I am a Computer Science undergraduate (3rd sem, Chandigarh University UP) architecting high-throughput full-stack platforms and deterministic AI systems. My work focuses on building reliable, explainable backends and low-latency data pipelines using **Next.js 14, FastAPI, PostgreSQL/PostGIS, Redis, and Qdrant**. I prioritize deterministic rule engines and verifiable RAG over blackbox heuristics.
+I am a Computer Science undergraduate (B.Tech CSE Core, Chandigarh University UP) architecting high-throughput full-stack platforms and deterministic AI systems. My work focuses on building reliable, explainable backends and low-latency data pipelines using **Next.js 14, FastAPI, PostgreSQL/PostGIS, Redis, and Qdrant**. I prioritize deterministic rule engines and verifiable RAG over blackbox heuristics.
 
 > **Current Focus:** Engineering high-resilience geospatial and real-time systems, targeting high-signal Software Engineering / Systems roles.
 
