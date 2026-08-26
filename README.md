@@ -162,35 +162,19 @@ I am a Computer Science undergraduate (3rd sem, Chandigarh University UP) archit
   <table border="0" width="100%">
     <tr>
       <td width="50%" align="center" valign="middle">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=arnnnnaaavvvvv&show_icons=true&include_all_commits=true&count_private=true&bg_color=0D1117&title_color=22D3EE&text_color=94A3B8&icon_color=22D3EE&border_color=30363D&hide_border=false" />
-          <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=arnnnnaaavvvvv&show_icons=true&include_all_commits=true&count_private=true&bg_color=FFFFFF&title_color=0891B2&text_color=475569&icon_color=0891B2&border_color=E2E8F0&hide_border=false" />
-          <img src="https://github-readme-stats.vercel.app/api?username=arnnnnaaavvvvv&show_icons=true&include_all_commits=true&count_private=true&bg_color=0D1117&title_color=22D3EE&text_color=94A3B8&icon_color=22D3EE&border_color=30363D&hide_border=false" alt="GitHub Stats" width="100%" />
-        </picture>
+        <img src="https://github-readme-stats-anuraghazra.vercel.app/api?username=arnnnnaaavvvvv&show_icons=true&include_all_commits=true&count_private=true&bg_color=0D1117&title_color=22D3EE&text_color=94A3B8&icon_color=22D3EE&border_color=30363D&hide_border=false" alt="GitHub Stats" width="100%" />
       </td>
       <td width="50%" align="center" valign="middle">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=arnnnnaaavvvvv&layout=compact&bg_color=0D1117&title_color=22D3EE&text_color=94A3B8&icon_color=22D3EE&border_color=30363D&hide_border=false" />
-          <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=arnnnnaaavvvvv&layout=compact&bg_color=FFFFFF&title_color=0891B2&text_color=475569&icon_color=0891B2&border_color=E2E8F0&hide_border=false" />
-          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=arnnnnaaavvvvv&layout=compact&bg_color=0D1117&title_color=22D3EE&text_color=94A3B8&icon_color=22D3EE&border_color=30363D&hide_border=false" alt="Top Languages" width="100%" />
-        </picture>
+        <img src="https://github-readme-stats-anuraghazra.vercel.app/api/top-langs/?username=arnnnnaaavvvvv&layout=compact&bg_color=0D1117&title_color=22D3EE&text_color=94A3B8&icon_color=22D3EE&border_color=30363D&hide_border=false" alt="Top Languages" width="100%" />
       </td>
     </tr>
   </table>
 
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=arnnnnaaavvvvv&background=0D1117&ring=22D3EE&fire=22D3EE&currStreakNum=22D3EE&sideNums=F8FAFC&sideLabels=94A3B8&dates=64748B&border=30363D" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=arnnnnaaavvvvv&background=FFFFFF&ring=0891B2&fire=0891B2&currStreakNum=0891B2&sideNums=0F172A&sideLabels=475569&dates=64748B&border=E2E8F0" />
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=arnnnnaaavvvvv&background=0D1117&ring=22D3EE&fire=22D3EE&currStreakNum=22D3EE&sideNums=F8FAFC&sideLabels=94A3B8&dates=64748B&border=30363D" alt="GitHub Streak Stats" width="100%" />
-  </picture>
+  <img src="https://streak-stats.demolab.com/?user=arnnnnaaavvvvv&theme=tokyonight&background=0D1117&ring=22D3EE&fire=22D3EE&currStreakNum=22D3EE&sideNums=F8FAFC&sideLabels=94A3B8&dates=64748B&border=30363D" alt="GitHub Streak Stats" width="100%" />
 
-  <br />
+  <br /><br />
 
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=arnnnnaaavvvvv&theme=github-compact&bg_color=0D1117&color=22D3EE&line=22D3EE&point=38BDF8&area=true&hide_border=false&border_color=30363D" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=arnnnnaaavvvvv&theme=github-compact&bg_color=FFFFFF&color=0891B2&line=0891B2&point=0284C7&area=true&hide_border=false&border_color=E2E8F0" />
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=arnnnnaaavvvvv&theme=github-compact&bg_color=0D1117&color=22D3EE&line=22D3EE&point=38BDF8&area=true&hide_border=false&border_color=30363D" alt="Contribution Activity Graph" width="100%" />
-  </picture>
+  <img src="https://ghchart.rshah.org/22D3EE/arnnnnaaavvvvv" alt="Arnav's GitHub Contribution Chart" width="100%" />
 </div>
 
 ---
