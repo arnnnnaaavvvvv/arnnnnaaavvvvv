@@ -9,7 +9,7 @@
 <br /><br />
 
 <p align="center">
-  <img src="assets/ascii-portrait.png" width="600" alt="Arnav Singh ASCII Portrait" />
+  <img src="assets/ascii-portrait.gif" width="600" alt="Arnav Singh ASCII Portrait" />
 </p>
 
 </div>
