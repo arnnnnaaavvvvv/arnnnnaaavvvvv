@@ -160,9 +160,9 @@ I am a Computer Science undergraduate (3rd sem, Chandigarh University UP) archit
 
 <div align="center">
   <p align="center">
-    <img src="https://github-readme-stats-anuraghazra.vercel.app/api?username=arnnnnaaavvvvv&show_icons=true&include_all_commits=true&count_private=true&bg_color=0D1117&title_color=22D3EE&text_color=94A3B8&icon_color=22D3EE&border_color=30363D&hide_border=false" height="155" alt="GitHub Stats" />
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=arnnnnaaavvvvv&theme=tokyonight" height="155" alt="GitHub Stats" />
     &nbsp;
-    <img src="https://github-readme-stats-anuraghazra.vercel.app/api/top-langs/?username=arnnnnaaavvvvv&layout=compact&bg_color=0D1117&title_color=22D3EE&text_color=94A3B8&icon_color=22D3EE&border_color=30363D&hide_border=false" height="155" alt="Top Languages" />
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=arnnnnaaavvvvv&theme=tokyonight" height="155" alt="Top Languages" />
   </p>
   <p align="center">
     <img src="https://streak-stats.demolab.com/?user=arnnnnaaavvvvv&theme=tokyonight&background=0D1117&ring=22D3EE&fire=22D3EE&currStreakNum=22D3EE&sideNums=F8FAFC&sideLabels=94A3B8&dates=64748B&border=30363D" height="155" alt="GitHub Streak Stats" />
