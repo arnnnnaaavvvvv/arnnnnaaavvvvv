@@ -144,7 +144,7 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University UP) buil
     <img src="profile-summary-card-output/tokyonight/2-most-commit-language.svg" height="155" alt="Top Languages" />
   </p>
   <p align="center">
-    <img src="https://streak-stats.demolab.com/?user=arnnnnaaavvvvv&theme=tokyonight&background=0D1117&ring=22D3EE&fire=22D3EE&currStreakNum=22D3EE&sideNums=F8FAFC&sideLabels=94A3B8&dates=64748B&border=30363D&date_format=M%20j%5B%2C%20Y%5D" height="155" alt="GitHub Streak Stats" />
+    <img src="https://streak-stats.demolab.com/?user=arnnnnaaavvvvv&theme=tokyonight&background=0D1117&ring=22D3EE&fire=22D3EE&currStreakNum=22D3EE&sideNums=F8FAFC&sideLabels=94A3B8&dates=64748B&border=30363D&date_format=M%20j%5B%2C%20Y%5D&cache_seconds=1800" height="155" alt="GitHub Streak Stats" />
   </p>
 </div>
 
