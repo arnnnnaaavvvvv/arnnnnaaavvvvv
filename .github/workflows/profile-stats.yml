@@ -2,11 +2,13 @@ name: Update GitHub Profile Stats & Metrics
 
 on:
   schedule:
-    # Runs every 6 hours automatically
-    - cron: "0 */6 * * *"
+    # Runs every 2 hours automatically for live synchronization
+    - cron: "0 */2 * * *"
   push:
     branches:
       - main
+  repository_dispatch:
+    types: [update-stats]
   workflow_dispatch:
 
 permissions:
@@ -18,6 +20,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Generate Profile Summary Cards
         uses: vn7n24fzkq/github-profile-summary-cards@release
