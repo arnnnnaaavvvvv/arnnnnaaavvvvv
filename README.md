@@ -139,12 +139,12 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University UP) buil
 
 <div align="center">
   <p align="center">
-    <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=arnnnnaaavvvvv&theme=tokyonight" height="155" alt="GitHub Stats" />
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=arnnnnaaavvvvv&theme=tokyonight&v=2" height="155" alt="GitHub Stats" />
     &nbsp;
-    <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=arnnnnaaavvvvv&theme=tokyonight" height="155" alt="Top Languages" />
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=arnnnnaaavvvvv&theme=tokyonight&v=2" height="155" alt="Top Languages" />
   </p>
   <p align="center">
-    <img src="https://streak-stats.demolab.com/?user=arnnnnaaavvvvv&theme=tokyonight&background=0D1117&ring=22D3EE&fire=22D3EE&currStreakNum=22D3EE&sideNums=F8FAFC&sideLabels=94A3B8&dates=64748B&border=30363D" height="155" alt="GitHub Streak Stats" />
+    <img src="https://streak-stats.demolab.com/?user=arnnnnaaavvvvv&theme=tokyonight&background=0D1117&ring=22D3EE&fire=22D3EE&currStreakNum=22D3EE&sideNums=F8FAFC&sideLabels=94A3B8&dates=64748B&border=30363D&date_format=M%20j%5B%2C%20Y%5D" height="155" alt="GitHub Streak Stats" />
   </p>
   <p align="center">
     <img src="https://ghchart.rshah.org/22D3EE/arnnnnaaavvvvv" width="700" alt="Arnav's GitHub Contribution Chart" />
