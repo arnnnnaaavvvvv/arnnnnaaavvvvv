@@ -28,7 +28,7 @@
 
 I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University UP) building full-stack, AI-integrated systems with a focus on architecture that's inspectable rather than black-box. My backend work spans Spring Boot, Express, and FastAPI depending on the problem; my data layer combines PostgreSQL, PostGIS, and Redis for geospatial and real-time workloads; and my AI systems are built around Qdrant-backed retrieval and explainable scoring, not opaque model outputs alone. I favor deterministic, rule-based engines where correctness and traceability matter more than raw prediction — and RAG pipelines where grounded retrieval beats hallucination-prone generation.
 
-> **Current Focus:** Designing explainable, production-grade systems with deliberate, traceable architecture — building toward high-signal roles in Software Engineering and AI Systems.
+> **Current Focus:** Engineering high-resilience quantitative engines, real-time systems, and distributed platforms targeting high-signal Software Engineering / Systems roles.
 
 ---
 
@@ -49,8 +49,8 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University UP) buil
     <td width="50%" valign="top">
       <h4>⚡ Full-Stack Development</h4>
       <ul>
-        <li><b>Frontend:</b> Next.js, React, Vite, Tailwind CSS</li>
-        <li><b>Backend:</b> Spring Boot, Express, FastAPI</li>
+        <li><b>Frontend:</b> Next.js 14, React, Vite, Tailwind CSS, Launch UI, Three.js</li>
+        <li><b>Backend:</b> Spring Boot, Express, FastAPI, Async DMA Pipelines</li>
         <li><b>Languages:</b> Java, Python, TypeScript, JavaScript, HTML5, CSS3</li>
       </ul>
     </td>
@@ -69,16 +69,16 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University UP) buil
       <ul>
         <li><b>Databases:</b> PostgreSQL, TimescaleDB, PostGIS, Redis</li>
         <li><b>Geospatial:</b> PostGIS, Shapely, Leaflet.js</li>
-        <li><b>Real-time:</b> WebSockets, Redis Pub/Sub</li>
+        <li><b>Real-time:</b> WebSockets, Redis Pub/Sub, Redis Streams</li>
       </ul>
     </td>
     <td width="50%" valign="top">
       <h4>⚙️ Infrastructure & Testing</h4>
       <ul>
         <li><b>Containers/Orchestration:</b> Docker, Kubernetes</li>
-        <li><b>CI/CD & VCS:</b> Git, GitHub Actions</li>
-        <li><b>Auth:</b> Firebase Admin SDK, JWT</li>
-        <li><b>Testing:</b> pytest</li>
+        <li><b>CI/CD & VCS:</b> Git, GitHub Actions, Vercel Production</li>
+        <li><b>Auth & Security:</b> AES-256 Envelope Vault, Firebase Admin SDK, JWT</li>
+        <li><b>Testing:</b> pytest, Next.js Production Builds</li>
       </ul>
     </td>
   </tr>
@@ -103,15 +103,17 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University UP) buil
 
 ---
 
-#### **2. SIRUS — Multi-Tenant Algorithmic Trading & Simulation Platform**
-> Multi-broker execution SaaS (Alpaca & KuCoin) processing sub-100ms orders via Redis Streams, featuring a no-code strategy AST, walk-forward Monte Carlo risk backtesting, and an AI trade-explainability co-pilot.
+#### **2. SIRUS — Enterprise Multi-Tenant Quantitative Engine & Algorithmic Trading Platform**
+> High-throughput systematic trading SaaS with direct market access (Zerodha Kite, Alpaca, KuCoin, Interactive Brokers, AngelOne, Upstox, Groww), sub-100ms vectorized NumPy/Pandas strategy backtesting, AES-256 envelope-encrypted Demat key vault, interactive on-page parameter simulator, and Launch UI landing design.
 
 <p>
+  <img src="https://img.shields.io/badge/Next.js_14-Launch_UI-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js 14" />
+  <img src="https://img.shields.io/badge/Three.js-3D_Wave_Particles-000000?style=flat-square&logo=threedotjs&logoColor=white" alt="Three.js" />
   <img src="https://img.shields.io/badge/Python-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
   <img src="https://img.shields.io/badge/Redis_Streams-Sub--100ms_Events-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
-  <img src="https://img.shields.io/badge/Monte_Carlo-Simulation_Engine-4F46E5?style=flat-square&logo=speedtest&logoColor=white" alt="Monte Carlo" />
-  <img src="https://img.shields.io/badge/Firebase-Multi--Tenant_Auth-FFCA28?style=flat-square&logo=firebase&logoColor=black" alt="Firebase" />
-  <img src="https://img.shields.io/badge/Broker_APIs-Alpaca_%7C_KuCoin-00E599?style=flat-square&logo=bitcoin&logoColor=black" alt="APIs" />
+  <img src="https://img.shields.io/badge/Vectorized_Backtester-540k_ticks%2Fs-4F46E5?style=flat-square&logo=numpy&logoColor=white" alt="Backtester" />
+  <img src="https://img.shields.io/badge/AES--256-Demat_Vault-10B981?style=flat-square&logo=shield&logoColor=white" alt="AES-256" />
+  <img src="https://img.shields.io/badge/Brokers-Zerodha_%7C_Alpaca_%7C_KuCoin_%7C_IBKR-22D3EE?style=flat-square&logo=bitcoin&logoColor=black" alt="Brokers" />
 </p>
 
 [→ Live Demo](https://web-frontend-three-gamma.vercel.app/) &nbsp;|&nbsp; [→ Source Code](https://github.com/arnnnnaaavvvvv/SIRUS) &nbsp;|&nbsp; [→ Architecture Spec](https://github.com/arnnnnaaavvvvv/SIRUS/blob/main/ARCHITECTURE.md)
