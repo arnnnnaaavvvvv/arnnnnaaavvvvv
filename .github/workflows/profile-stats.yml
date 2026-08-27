@@ -1,4 +1,4 @@
-name: Update GitHub Profile Stats & Metrics
+name: Update GitHub Profile Stats & Contribution Graph
 
 on:
   schedule:
@@ -23,6 +23,15 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Generate Contribution Grid Snake SVG
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/github-contribution-grid-snake.svg?palette=github-dark&color_snake=#22D3EE&color_dots=#161B22,#0E4429,#006D32,#26A641,#39D353
+            assets/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#22D3EE
+        continue-on-error: true
+
       - name: Generate Profile Summary Cards
         uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
@@ -34,12 +43,12 @@ jobs:
           THEME: tokyonight
         continue-on-error: true
 
-      - name: Commit and Push Updated Stats
+      - name: Commit and Push Updated Stats & Graphs
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
           if ! git diff-index --quiet HEAD; then
-            git commit -m "chore(stats): auto-update live metrics and contribution cards [skip ci]"
+            git commit -m "chore(stats): update contribution graphs and live metrics [skip ci]"
             git push origin main
           fi
