@@ -142,9 +142,7 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University UP) buil
     <img src="profile-summary-card-output/tokyonight/2-most-commit-language.svg" height="160" alt="Top Languages" />
   </p>
   <p align="center">
-    <img src="profile-summary-card-output/tokyonight/4-productive-time.svg" height="160" alt="Productive Hours UTC +5:30" />
-    &nbsp;
-    <img src="profile-summary-card-output/tokyonight/streak-stats.svg" height="160" alt="GitHub Daily Streak" />
+    <img src="profile-summary-card-output/tokyonight/streak-stats.svg" height="175" alt="GitHub Daily Streak" />
   </p>
 </div>
 
