@@ -65,7 +65,6 @@ async function processCards() {
     let svg = fs.readFileSync(profileDetailsPath, 'utf8');
 
     if (svg.includes('<<<<<<<') || !svg.trim().endsWith('</svg>')) {
-      console.log('Restoring 0-profile-details.svg from git...');
       try {
         svg = execSync('git show HEAD:profile-summary-card-output/tokyonight/0-profile-details.svg', { encoding: 'utf8' });
       } catch (e) {}
@@ -89,7 +88,6 @@ async function processCards() {
         const liveCount = await getLiveContributions(username);
         if (liveCount) {
           console.log(`Live GitHub contributions verified: ${liveCount}`);
-          // Replace Total Contributions number with exact live GitHub count
           streakSvg = streakSvg.replace(
             /(<!-- Total Contributions big number -->\s*<g transform='translate\([^)]+\)'>\s*<text [^>]*>)\s*([0-9,]+)\s*(<\/text>)/,
             `$1\n                        ${liveCount}\n                    $3`
