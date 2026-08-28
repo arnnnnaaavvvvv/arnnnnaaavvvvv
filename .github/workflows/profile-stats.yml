@@ -34,6 +34,9 @@ jobs:
           THEME: tokyonight
         continue-on-error: true
 
+      - name: Format Profile Summary Card Headers
+        run: node .github/scripts/format-cards.js
+
       - name: Commit and Push Updated Stats
         run: |
           git config --global user.name "github-actions[bot]"
