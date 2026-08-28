@@ -2,8 +2,8 @@ name: Update GitHub Profile Stats & Metrics
 
 on:
   schedule:
-    # Runs every 2 hours automatically for live synchronization
-    - cron: "0 */2 * * *"
+    # Runs every hour automatically for live synchronization across all your repos
+    - cron: "0 * * * *"
   push:
     branches:
       - main
