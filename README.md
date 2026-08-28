@@ -137,12 +137,12 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University UP) buil
 
 <div align="center">
   <p align="center">
-    <img src="profile-summary-card-output/tokyonight/3-stats.svg" height="155" alt="GitHub Stats" />
+    <img src="profile-summary-card-output/tokyonight/3-stats.svg" height="160" alt="GitHub Stats" />
     &nbsp;
-    <img src="profile-summary-card-output/tokyonight/2-most-commit-language.svg" height="155" alt="Top Languages" />
+    <img src="profile-summary-card-output/tokyonight/2-most-commit-language.svg" height="160" alt="Top Languages" />
   </p>
   <p align="center">
-    <img src="profile-summary-card-output/tokyonight/0-profile-details.svg" height="155" alt="Profile Details & Contributions" />
+    <img src="https://streak-stats.demolab.com?user=arnnnnaaavvvvv&theme=tokyonight&hide_border=true" height="160" alt="GitHub Daily Streak" />
   </p>
 </div>
 
