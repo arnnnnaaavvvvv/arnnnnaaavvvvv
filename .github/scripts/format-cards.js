@@ -21,8 +21,8 @@ async function processCards() {
       }
     }
 
-    // Replace the header cleanly
-    svg = svg.replace(/<text x="30" y="40"[^>]*>.*?<\/text>/, '<text x="30" y="40" class="gpsc-item" style="--gpsc-i: 0; font-size: 20px; font-weight: 600; fill: #70a5fd;">Arnav Singh &bull; Contribution Activity</text>');
+    // Replace the header cleanly using valid XML numeric entity &#8226;
+    svg = svg.replace(/<text x="30" y="40"[^>]*>.*?<\/text>/, '<text x="30" y="40" class="gpsc-item" style="--gpsc-i: 0; font-size: 20px; font-weight: 600; fill: #70a5fd;">Arnav Singh &#8226; Contribution Activity</text>');
 
     if (!svg.trim().endsWith('</svg>')) {
       console.error('Warning: SVG does not end with </svg>');
