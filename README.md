@@ -133,7 +133,7 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University UP) buil
   <img src="https://img.shields.io/badge/Brokers-Zerodha_%7C_Alpaca_%7C_KuCoin_%7C_IBKR-22D3EE?style=flat-square&logo=bitcoin&logoColor=black" alt="Brokers" />
 </p>
 
-[→ Live Demo](https://sirus-opal.vercel.app/) &nbsp;|&nbsp; [→ Source Code](https://github.com/arnnnnaaavvvvv/SIRUS) &nbsp;|&nbsp; [→ Architecture Spec](https://github.com/arnnnnaaavvvvv/SIRUS/blob/main/ARCHITECTURE.md)
+[→ Live Demo](https://web-frontend-three-gamma.vercel.app/) &nbsp;|&nbsp; [→ Source Code](https://github.com/arnnnnaaavvvvv/SIRUS) &nbsp;|&nbsp; [→ Architecture Spec](https://github.com/arnnnnaaavvvvv/SIRUS/blob/main/ARCHITECTURE.md)
 
 ---
 
