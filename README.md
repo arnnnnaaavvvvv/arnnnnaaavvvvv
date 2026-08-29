@@ -102,10 +102,10 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University UP) buil
 ---
 
 #### **2. SIRUS — Enterprise Multi-Tenant Quantitative Engine & Algorithmic Trading Platform**
-> High-throughput systematic trading SaaS with direct market access (Zerodha Kite, Alpaca, KuCoin, Interactive Brokers, AngelOne, Upstox, Groww), sub-100ms vectorized NumPy/Pandas strategy backtesting, AES-256 envelope-encrypted Demat key vault, interactive on-page parameter simulator, and Launch UI landing design.
+> High-throughput systematic trading SaaS with direct market access (Zerodha Kite, Alpaca, KuCoin, Interactive Brokers, AngelOne, Upstox, Groww), sub-100ms vectorized NumPy/Pandas strategy backtesting, AES-256 envelope-encrypted Demat key vault, interactive on-page parameter simulator, and Paddle Billing design system.
 
 <p>
-  <img src="https://img.shields.io/badge/Next.js_14-Launch_UI-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js 14" />
+  <img src="https://img.shields.io/badge/Next.js_14-Paddle_UI-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js 14" />
   <img src="https://img.shields.io/badge/Three.js-3D_Wave_Particles-000000?style=flat-square&logo=threedotjs&logoColor=white" alt="Three.js" />
   <img src="https://img.shields.io/badge/Python-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
   <img src="https://img.shields.io/badge/Redis_Streams-Sub--100ms_Events-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
@@ -114,7 +114,7 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University UP) buil
   <img src="https://img.shields.io/badge/Brokers-Zerodha_%7C_Alpaca_%7C_KuCoin_%7C_IBKR-22D3EE?style=flat-square&logo=bitcoin&logoColor=black" alt="Brokers" />
 </p>
 
-[→ Live Demo](https://web-frontend-three-gamma.vercel.app/) &nbsp;|&nbsp; [→ Source Code](https://github.com/arnnnnaaavvvvv/SIRUS) &nbsp;|&nbsp; [→ Architecture Spec](https://github.com/arnnnnaaavvvvv/SIRUS/blob/main/ARCHITECTURE.md)
+[→ Live Demo](https://sirus-opal.vercel.app/) &nbsp;|&nbsp; [→ Source Code](https://github.com/arnnnnaaavvvvv/SIRUS) &nbsp;|&nbsp; [→ Architecture Spec](https://github.com/arnnnnaaavvvvv/SIRUS/blob/main/ARCHITECTURE.md)
 
 ---
 
