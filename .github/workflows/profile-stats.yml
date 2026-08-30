@@ -35,6 +35,8 @@ jobs:
         continue-on-error: true
 
       - name: Format Profile Summary Card Headers
+        env:
+          GH_USERNAME: ${{ github.repository_owner }}
         run: node .github/scripts/format-cards.js
 
       - name: Commit and Push Updated Stats

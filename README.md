@@ -156,6 +156,9 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University UP) buil
 
 <div align="center">
   <p align="center">
+    <img src="profile-summary-card-output/tokyonight/0-profile-details.svg" height="180" alt="Total Contribution Activity" />
+  </p>
+  <p align="center">
     <img src="profile-summary-card-output/tokyonight/3-stats.svg" height="160" alt="GitHub Stats" />
     &nbsp;
     <img src="profile-summary-card-output/tokyonight/2-most-commit-language.svg" height="160" alt="Top Languages" />

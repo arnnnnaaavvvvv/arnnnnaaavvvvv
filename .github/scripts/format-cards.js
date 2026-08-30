@@ -5,8 +5,9 @@ const path = require('path');
 const dir = path.join(__dirname, '..', '..', 'profile-summary-card-output', 'tokyonight');
 const profileDetailsPath = path.join(dir, '0-profile-details.svg');
 const streakStatsPath = path.join(dir, 'streak-stats.svg');
+const statsCardPath = path.join(dir, '3-stats.svg');
 
-function createTwoColumnStreakSvg(currentStreak = '4', currentRange = 'Aug 25 - Aug 28', longestStreak = '4', longestRange = 'Aug 18 - Aug 21') {
+function createTwoColumnStreakSvg(currentStreak = '5', currentRange = 'Aug 25 - Aug 29', longestStreak = '5', longestRange = 'Aug 25 - Aug 29') {
   return `<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'
         style='isolation: isolate' viewBox='0 0 340 195' width='340px' height='195px' direction='ltr'>
     <style>
@@ -84,35 +85,18 @@ function createTwoColumnStreakSvg(currentStreak = '4', currentRange = 'Aug 25 - 
 }
 
 async function processCards() {
-  const username = process.env.USERNAME || 'arnnnnaaavvvvv';
+  const username = process.env.GH_USERNAME || (process.env.GITHUB_REPOSITORY ? process.env.GITHUB_REPOSITORY.split('/')[0] : 'arnnnnaaavvvvv');
 
-  // 1. Process 0-profile-details.svg
-  if (fs.existsSync(profileDetailsPath)) {
-    let svg = fs.readFileSync(profileDetailsPath, 'utf8');
-
-    if (svg.includes('<<<<<<<') || !svg.trim().endsWith('</svg>')) {
-      try {
-        svg = execSync('git show HEAD:profile-summary-card-output/tokyonight/0-profile-details.svg', { encoding: 'utf8' });
-      } catch (e) {}
-    }
-
-    svg = svg.replace(/<text x="30" y="40"[^>]*>.*?<\/text>/, '<text x="30" y="40" class="gpsc-item" style="--gpsc-i: 0; font-size: 20px; font-weight: 600; fill: #70a5fd;">Arnav Singh &#8226; Contribution Activity</text>');
-
-    if (svg.trim().endsWith('</svg>')) {
-      fs.writeFileSync(profileDetailsPath, svg.trim(), 'utf8');
-      console.log('Successfully formatted 0-profile-details.svg');
-    }
-  }
-
-  // 2. Fetch live streak metrics and create clean 2-column Streak Card
-  let currentStreak = '4';
-  let currentRange = 'Aug 25 - Aug 28';
-  let longestStreak = '4';
-  let longestRange = 'Aug 18 - Aug 21';
+  // 1. Fetch live streak & contributions metrics
+  let currentStreak = '5';
+  let currentRange = 'Aug 25 - Aug 29';
+  let longestStreak = '5';
+  let longestRange = 'Aug 25 - Aug 29';
+  let totalContributions = '165';
 
   try {
     const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 4000);
+    const timeout = setTimeout(() => controller.abort(), 6000);
     const streakUrl = `https://streak-stats.demolab.com/?user=${username}&theme=tokyonight&hide_border=true`;
     const response = await fetch(streakUrl, { signal: controller.signal });
     clearTimeout(timeout);
@@ -130,14 +114,75 @@ async function processCards() {
 
       const longRangeMatch = rawSvg.match(/<!-- Longest Streak range -->[\s\S]*?<text[^>]*>\s*([^\n<]+)\s*<\/text>/i);
       if (longRangeMatch) longestRange = longRangeMatch[1].trim();
+
+      const totalMatch = rawSvg.match(/<!-- Total Contributions big number -->[\s\S]*?<text[^>]*>\s*([0-9]+)\s*<\/text>/i);
+      if (totalMatch) totalContributions = totalMatch[1];
     }
   } catch (err) {
-    console.warn('Using default/cached streak values:', err.message);
+    console.warn('Using fallback streak values:', err.message);
   }
 
+  // 2. Fetch live commits across repos
+  let calculatedCommits = 215;
+  try {
+    const reposRes = await fetch(`https://api.github.com/users/${username}/repos?per_page=100`);
+    if (reposRes.ok) {
+      const repos = await reposRes.json();
+      if (Array.isArray(repos)) {
+        let commitSum = 0;
+        for (const repo of repos) {
+          let page = 1;
+          while (true) {
+            const cRes = await fetch(`https://api.github.com/repos/${username}/${repo.name}/commits?per_page=100&page=${page}`);
+            if (!cRes.ok) break;
+            const cList = await cRes.json();
+            if (!Array.isArray(cList) || cList.length === 0) break;
+            commitSum += cList.length;
+            if (cList.length < 100) break;
+            page++;
+          }
+        }
+        if (commitSum > 0) calculatedCommits = commitSum;
+      }
+    }
+  } catch (err) {
+    console.warn('Using cached commits count:', err.message);
+  }
+
+  // 3. Process 0-profile-details.svg (Total Contribution Activity card)
+  if (fs.existsSync(profileDetailsPath)) {
+    let svg = fs.readFileSync(profileDetailsPath, 'utf8');
+
+    if (svg.includes('<<<<<<<') || !svg.trim().endsWith('</svg>')) {
+      try {
+        svg = execSync('git show HEAD:profile-summary-card-output/tokyonight/0-profile-details.svg', { encoding: 'utf8' });
+      } catch (e) {}
+    }
+
+    svg = svg.replace(/<text x="30" y="40"[^>]*>.*?<\/text>/, '<text x="30" y="40" class="gpsc-item" style="--gpsc-i: 0; font-size: 20px; font-weight: 600; fill: #70a5fd;">Arnav Singh &#8226; Contribution Activity</text>');
+    
+    // Update contributions count text
+    svg = svg.replace(/<text x="21" y="14" class="gpsc-item"[^>]*>[0-9]+ Contributions on GitHub<\/text>/, `<text x="21" y="14" class="gpsc-item" style="--gpsc-i: 0; fill: #38bdae; font-size: 14px;">${totalContributions} Contributions on GitHub</text>`);
+
+    if (svg.trim().endsWith('</svg>')) {
+      fs.writeFileSync(profileDetailsPath, svg.trim(), 'utf8');
+      console.log(`Successfully formatted 0-profile-details.svg (${totalContributions} Contributions)`);
+    }
+  }
+
+  // 4. Process 3-stats.svg
+  if (fs.existsSync(statsCardPath)) {
+    let statsSvg = fs.readFileSync(statsCardPath, 'utf8');
+    // Replace the commits number (second value label in stats)
+    statsSvg = statsSvg.replace(/(<text x="130" y="39\.2" class="gpsc-item"[^>]*>)[0-9]+(<\/text>)/, `$1${calculatedCommits}$2`);
+    fs.writeFileSync(statsCardPath, statsSvg.trim(), 'utf8');
+    console.log(`Successfully updated 3-stats.svg (Total Commits: ${calculatedCommits})`);
+  }
+
+  // 5. Generate clean 2-column Streak Card
   const cleanStreakSvg = createTwoColumnStreakSvg(currentStreak, currentRange, longestStreak, longestRange);
   fs.writeFileSync(streakStatsPath, cleanStreakSvg.trim(), 'utf8');
-  console.log(`Successfully generated clean 2-column streak card (Current: ${currentStreak}, Longest: ${longestStreak})`);
+  console.log(`Successfully generated streak card (Current: ${currentStreak}, Longest: ${longestStreak})`);
 }
 
 processCards();
