@@ -37,6 +37,7 @@ jobs:
       - name: Format Profile Summary Card Headers
         env:
           GH_USERNAME: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node .github/scripts/format-cards.js
 
       - name: Commit and Push Updated Stats

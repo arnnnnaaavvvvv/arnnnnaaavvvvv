@@ -3,11 +3,10 @@ const fs = require('fs');
 const path = require('path');
 
 const dir = path.join(__dirname, '..', '..', 'profile-summary-card-output', 'tokyonight');
-const profileDetailsPath = path.join(dir, '0-profile-details.svg');
 const streakStatsPath = path.join(dir, 'streak-stats.svg');
 const statsCardPath = path.join(dir, '3-stats.svg');
 
-function createThreeColumnStreakSvg(totalContributions = '166', totalRange = 'Apr 2, 2022 - Present', currentStreak = '6', currentRange = 'Aug 25 - Aug 30', longestStreak = '6', longestRange = 'Aug 25 - Aug 30') {
+function createThreeColumnStreakSvg(totalContributions = '171', totalRange = 'Apr 2, 2022 - Present', currentStreak = '6', currentRange = 'Aug 25 - Aug 30', longestStreak = '6', longestRange = 'Aug 25 - Aug 30') {
   return `<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'
         style='isolation: isolate' viewBox='0 0 495 195' width='495px' height='195px' direction='ltr'>
     <style>
@@ -103,8 +102,49 @@ function createThreeColumnStreakSvg(totalContributions = '166', totalRange = 'Ap
 </svg>`;
 }
 
+async function fetchGraphQLContributions(username, token) {
+  if (!token) return null;
+  try {
+    const currentYear = new Date().getFullYear();
+    let total = 0;
+    for (let year = 2022; year <= currentYear; year++) {
+      const from = `${year}-01-01T00:00:00Z`;
+      const to = `${year}-12-31T23:59:59Z`;
+      const query = `
+        query($login: String!, $from: DateTime!, $to: DateTime!) {
+          user(login: $login) {
+            contributionsCollection(from: $from, to: $to) {
+              contributionCalendar {
+                totalContributions
+              }
+            }
+          }
+        }
+      `;
+      const res = await fetch('https://api.github.com/graphql', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json',
+          'User-Agent': 'node-fetch'
+        },
+        body: JSON.stringify({ query, variables: { login: username, from, to } })
+      });
+      if (res.ok) {
+        const data = await res.json();
+        const yearCount = data?.data?.user?.contributionsCollection?.contributionCalendar?.totalContributions || 0;
+        total += yearCount;
+      }
+    }
+    return total > 0 ? String(total) : null;
+  } catch (e) {
+    return null;
+  }
+}
+
 async function processCards() {
   const username = process.env.GH_USERNAME || (process.env.GITHUB_REPOSITORY ? process.env.GITHUB_REPOSITORY.split('/')[0] : 'arnnnnaaavvvvv');
+  const token = process.env.GITHUB_TOKEN || '';
 
   // 1. Fetch live streak & contributions metrics
   let currentStreak = '6';
@@ -136,7 +176,9 @@ async function processCards() {
       if (longRangeMatch) longestRange = longRangeMatch[1].trim();
 
       const totalMatch = rawSvg.match(/<!-- Total Contributions big number -->[\s\S]*?<text[^>]*>\s*([0-9]+)\s*<\/text>/i);
-      if (totalMatch) totalContributions = totalMatch[1];
+      if (totalMatch && Number(totalMatch[1]) >= Number(totalContributions)) {
+        totalContributions = totalMatch[1];
+      }
 
       const totalRangeMatch = rawSvg.match(/<!-- Total Contributions range -->[\s\S]*?<text[^>]*>\s*([^\n<]+)\s*<\/text>/i);
       if (totalRangeMatch) totalRange = totalRangeMatch[1].trim();
@@ -145,8 +187,14 @@ async function processCards() {
     console.warn('Using fallback streak values:', err.message);
   }
 
-  // 2. Fetch live commits across repos
-  let calculatedCommits = 215;
+  // 2. Query GitHub GraphQL directly if token available
+  const gqlTotal = await fetchGraphQLContributions(username, token);
+  if (gqlTotal && Number(gqlTotal) >= Number(totalContributions)) {
+    totalContributions = gqlTotal;
+  }
+
+  // 3. Fetch live commits across repos
+  let calculatedCommits = 223;
   try {
     const reposRes = await fetch(`https://api.github.com/users/${username}/repos?per_page=100`);
     if (reposRes.ok) {
@@ -172,7 +220,7 @@ async function processCards() {
     console.warn('Using cached commits count:', err.message);
   }
 
-  // 3. Process 3-stats.svg
+  // 4. Process 3-stats.svg
   if (fs.existsSync(statsCardPath)) {
     let statsSvg = fs.readFileSync(statsCardPath, 'utf8');
     statsSvg = statsSvg.replace(/(<text x="130" y="39\.2" class="gpsc-item"[^>]*>)[0-9]+(<\/text>)/, `$1${calculatedCommits}$2`);
@@ -180,7 +228,7 @@ async function processCards() {
     console.log(`Successfully updated 3-stats.svg (Total Commits: ${calculatedCommits})`);
   }
 
-  // 4. Generate clean 3-column Streak & Total Contributions Card
+  // 5. Generate clean 3-column Streak & Total Contributions Card
   const cleanStreakSvg = createThreeColumnStreakSvg(totalContributions, totalRange, currentStreak, currentRange, longestStreak, longestRange);
   fs.writeFileSync(streakStatsPath, cleanStreakSvg.trim(), 'utf8');
   console.log(`Successfully generated 3-column streak & total contributions card (Total: ${totalContributions}, Current: ${currentStreak}, Longest: ${longestStreak})`);
