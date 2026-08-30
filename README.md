@@ -106,14 +106,16 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University UP) buil
 ### 🚀 Featured Engineering Systems
 
 #### **1. IGNITE — Dynamic Tourist Safety & Smart Route Engine**
-> Destination-agnostic safety routing platform that fuses live meteorological data, crowd density, terrain hazards, and emergency-service proximity into an explainable, deterministic risk-scored itinerary engine with real-time geofencing.
+> Pan-India tourist safety routing and itinerary engine covering all 28 States & 8 UTs. Fuses live IMD meteorological data, terrain slope radars, AMS hypoxia physiological risk scoring, date-aware traffic evaluation, and autonomous hazard rerouting into an explainable, deterministic risk-scored itinerary engine. Features full-screen modal planning, daily opening/closing hours, scenic best view timings, alternate detour recommendations, multi-agency emergency rescue dispatch (SDRF/ITBP/NDRF), and complete iOS & Android mobile optimization.
 
 <p>
   <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/PostGIS-Geospatial-336791?style=flat-square&logo=postgresql&logoColor=white" alt="PostGIS" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/React_19_+_Vite-00D8FF?style=flat-square&logo=react&logoColor=black" alt="React + Vite" />
+  <img src="https://img.shields.io/badge/Leaflet.js-Interactive_Map-199900?style=flat-square&logo=leaflet&logoColor=white" alt="Leaflet.js" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
   <img src="https://img.shields.io/badge/Rule--Based_Risk_AST-Explainable-00E599?style=flat-square&logo=codefactor&logoColor=black" alt="Risk Engine" />
+  <img src="https://img.shields.io/badge/Pan--India_Coverage-28_States_%26_8_UTs-FF6B35?style=flat-square&logo=googlemaps&logoColor=white" alt="Pan-India Coverage" />
+  <img src="https://img.shields.io/badge/Mobile_Ready-iOS_%26_Android-3DDC84?style=flat-square&logo=android&logoColor=white" alt="Mobile Ready" />
 </p>
 
 [→ Live Demo](https://ignite-lemon-nu.vercel.app/) &nbsp;|&nbsp; [→ Source Code](https://github.com/arnnnnaaavvvvv/IGNITE) &nbsp;|&nbsp; [→ Architecture Spec](https://github.com/arnnnnaaavvvvv/IGNITE/blob/main/ARCHITECTURE.md)
