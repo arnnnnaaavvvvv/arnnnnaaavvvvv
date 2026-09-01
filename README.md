@@ -106,7 +106,7 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University UP) buil
 ### 🚀 Featured Engineering Systems
 
 #### **1. CLUDE — Autonomous Production Incident Root-Cause Engine & Codebase Intelligence**
-> Pinpoints the exact commit that broke production with causal AI reasoning and onboards engineers to unfamiliar codebases in minutes. Evaluates semantic causality across structural git diffs to correlate multiline stack traces (Python, Node.js/TS, Go, Java, Rust) against commit history in < 8s. Features Tree-sitter syntax-aware AST chunking, PostgreSQL 16 with `pgvector` HNSW acceleration, Claude 3.5 Sonnet / GPT-4o causal reasoning chains with calibrated confidence scoring, embedded Monaco-style syntax diff viewer, high-risk churn danger-zone detection, and repo-grounded dark-mode Mermaid.js architectural topology graphs.
+> Pinpoints the exact commit that broke production with causal AI reasoning and onboards engineers to unfamiliar codebases in minutes. Evaluates semantic causality across structural git diffs to correlate multiline stack traces (Python, Node.js/TS, Go, Java, Rust) against commit history in < 8s. Features Tree-sitter syntax-aware AST chunking, PostgreSQL 16 with `pgvector` HNSW acceleration, Claude 3.5 Sonnet / GPT-4o causal reasoning chains with calibrated confidence scoring, embedded Monaco-style syntax diff viewer, high-risk churn danger-zone detection, interactive GitHub account connection with granular repository permissions, and repo-grounded dark-mode Mermaid.js architectural topology graphs.
 
 <p>
   <img src="https://img.shields.io/badge/FastAPI-Python_3.11+-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
@@ -115,6 +115,7 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University UP) buil
   <img src="https://img.shields.io/badge/Redis_+_Celery-Async_Worker-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis Celery" />
   <img src="https://img.shields.io/badge/Tree--sitter-AST_Chunking-3572A5?style=flat-square&logo=cplusplus&logoColor=white" alt="Tree-sitter" />
   <img src="https://img.shields.io/badge/Causal_AI-Claude_3.5_%7C_GPT--4o-D97706?style=flat-square&logo=anthropic&logoColor=white" alt="Causal AI" />
+  <img src="https://img.shields.io/badge/GitHub_Connect-Granular_Sync-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub Connect" />
   <img src="https://img.shields.io/badge/Docker_Compose-Multi--Container-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
 </p>
 
