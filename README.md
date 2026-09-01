@@ -9,18 +9,12 @@
 <br />
 
 <p align="center">
-  <a href="https://github.com/arnnnnaaavvvvv" target="_blank">
-    <img src="https://skillicons.dev/icons?i=github&theme=dark" alt="GitHub" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/arnav-singh-986722252" target="_blank">
-    <img src="https://skillicons.dev/icons?i=linkedin&theme=dark" alt="LinkedIn" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="mailto:arnav152007@gmail.com">
-    <img src="https://skillicons.dev/icons?i=gmail&theme=dark" alt="Email" />
-  </a>
-  &nbsp;&nbsp;
+  <a href="https://github.com/arnnnnaaavvvvv"><img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+  &nbsp;
+  <a href="https://www.linkedin.com/in/arnav-singh-986722252"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  &nbsp;
+  <a href="mailto:arnav152007@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  &nbsp;
   <img src="https://komarev.com/ghpvc/?username=arnnnnaaavvvvv&label=Profile%20Views&color=22D3EE&style=for-the-badge" alt="Profile Views" />
 </p>
 
