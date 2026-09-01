@@ -24,9 +24,9 @@
 
 ### ⚡ Overview
 
-I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University UP) building full-stack, AI-integrated systems with a focus on architecture that's inspectable rather than black-box. My backend work spans Spring Boot, Express, and FastAPI depending on the problem; my data layer combines PostgreSQL, PostGIS, and Redis for geospatial and real-time workloads; and my AI systems are built around Qdrant-backed retrieval and explainable scoring, not opaque model outputs alone. I favor deterministic, rule-based engines where correctness and traceability matter more than raw prediction — and RAG pipelines where grounded retrieval beats hallucination-prone generation.
+I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University UP) building full-stack, AI-integrated systems with a focus on architecture that's inspectable rather than black-box. My work spans causal AI root-cause analysis engines, high-throughput quantitative backtesters, and real-time geospatial routing platforms. My backend work spans Spring Boot, Express, and FastAPI; my data layer combines PostgreSQL, pgvector, PostGIS, and Redis; and my AI systems are built around Tree-sitter AST parsing, vector retrieval, and deterministic explainable causal reasoning chains. I favor deterministic, rule-based engines where correctness and traceability matter most.
 
-> **Current Focus:** Engineering high-resilience quantitative engines, real-time systems, and distributed platforms targeting high-signal Software Engineering / Systems roles.
+> **Current Focus:** Engineering high-resilience quantitative engines, developer intelligence platforms, and distributed systems targeting high-signal Software Engineering / Systems roles.
 
 ---
 
@@ -66,17 +66,17 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University UP) buil
     <td width="50%" valign="top">
       <h4>⚡ Full-Stack Development</h4>
       <ul>
-        <li><b>Frontend:</b> Next.js 14, React, Vite, Tailwind CSS, Launch UI, Three.js</li>
-        <li><b>Backend:</b> Spring Boot, Express, FastAPI, Async DMA Pipelines</li>
-        <li><b>Languages:</b> Java, Python, TypeScript, JavaScript, HTML5, CSS3</li>
+        <li><b>Frontend:</b> Next.js 14, React, Vite, Tailwind CSS, Monaco Editor, Framer Motion, Launch UI, Three.js</li>
+        <li><b>Backend:</b> FastAPI, Spring Boot, Express, Celery Async Pipelines, Async DMA Pipelines</li>
+        <li><b>Languages:</b> Python, TypeScript, JavaScript, Java, SQL, HTML5, CSS3</li>
       </ul>
     </td>
     <td width="50%" valign="top">
       <h4>🤖 AI/ML & LLM Systems</h4>
       <ul>
-        <li><b>Model Access:</b> OpenAI (embeddings + GPT), Google Gemini API</li>
-        <li><b>Vector Search:</b> Qdrant</li>
-        <li><b>Applications:</b> RAG architecture, multi-agent systems, deterministic explainable scoring</li>
+        <li><b>Model Access:</b> Claude 3.5 Sonnet, OpenAI (GPT-4o & embeddings), Google Gemini API</li>
+        <li><b>Vector Search:</b> PostgreSQL + pgvector (HNSW), Qdrant</li>
+        <li><b>AST & Codebase Intelligence:</b> Tree-sitter AST syntax chunking, semantic causal diff analysis, RAG pipelines</li>
       </ul>
     </td>
   </tr>
@@ -84,17 +84,17 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University UP) buil
     <td width="50%" valign="top">
       <h4>🗺️ Data & Geospatial</h4>
       <ul>
-        <li><b>Databases:</b> PostgreSQL, TimescaleDB, PostGIS, Redis</li>
+        <li><b>Databases:</b> PostgreSQL (pgvector, PostGIS), TimescaleDB, Redis</li>
         <li><b>Geospatial:</b> PostGIS, Shapely, Leaflet.js</li>
-        <li><b>Real-time:</b> WebSockets, Redis Pub/Sub, Redis Streams</li>
+        <li><b>Real-time:</b> WebSockets, Redis Pub/Sub, Redis Streams, Celery Task Queues</li>
       </ul>
     </td>
     <td width="50%" valign="top">
       <h4>⚙️ Infrastructure & Testing</h4>
       <ul>
-        <li><b>Containers/Orchestration:</b> Docker, Kubernetes</li>
+        <li><b>Containers/Orchestration:</b> Docker, Docker Compose, Kubernetes</li>
         <li><b>CI/CD & VCS:</b> Git, GitHub Actions, Vercel Production</li>
-        <li><b>Auth & Security:</b> AES-256 Envelope Vault, Firebase Admin SDK, JWT</li>
+        <li><b>Auth & Security:</b> OAuth 2.0, AES-256 Envelope Vault, Firebase Admin SDK, JWT</li>
         <li><b>Testing:</b> pytest, Next.js Production Builds</li>
       </ul>
     </td>
@@ -105,7 +105,24 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University UP) buil
 
 ### 🚀 Featured Engineering Systems
 
-#### **1. IGNITE — Dynamic Tourist Safety & Smart Route Engine**
+#### **1. CLUDE — Autonomous Production Incident Root-Cause Engine & Codebase Intelligence**
+> Pinpoints the exact commit that broke production with causal AI reasoning and onboards engineers to unfamiliar codebases in minutes. Evaluates semantic causality across structural git diffs to correlate multiline stack traces (Python, Node.js/TS, Go, Java, Rust) against commit history in < 8s. Features Tree-sitter syntax-aware AST chunking, PostgreSQL 16 with `pgvector` HNSW acceleration, Claude 3.5 Sonnet / GPT-4o causal reasoning chains with calibrated confidence scoring, embedded Monaco-style syntax diff viewer, high-risk churn danger-zone detection, and repo-grounded dark-mode Mermaid.js architectural topology graphs.
+
+<p>
+  <img src="https://img.shields.io/badge/FastAPI-Python_3.11+-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/Next.js_14.2-App_Router-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/PostgreSQL_16-pgvector_HNSW-336791?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL pgvector" />
+  <img src="https://img.shields.io/badge/Redis_+_Celery-Async_Worker-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis Celery" />
+  <img src="https://img.shields.io/badge/Tree--sitter-AST_Chunking-3572A5?style=flat-square&logo=cplusplus&logoColor=white" alt="Tree-sitter" />
+  <img src="https://img.shields.io/badge/Causal_AI-Claude_3.5_%7C_GPT--4o-D97706?style=flat-square&logo=anthropic&logoColor=white" alt="Causal AI" />
+  <img src="https://img.shields.io/badge/Docker_Compose-Multi--Container-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+</p>
+
+[→ Live Demo](https://frontend-mu-roan-llgeruknl5.vercel.app) &nbsp;|&nbsp; [→ Source Code](https://github.com/arnnnnaaavvvvv/CLUDE)
+
+---
+
+#### **2. IGNITE — Dynamic Tourist Safety & Smart Route Engine**
 > Pan-India tourist safety routing and itinerary engine covering all 28 States & 8 UTs. Fuses live IMD meteorological data, terrain slope radars, AMS hypoxia physiological risk scoring, date-aware traffic evaluation, and autonomous hazard rerouting into an explainable, deterministic risk-scored itinerary engine. Features full-screen modal planning, daily opening/closing hours, scenic best view timings, alternate detour recommendations, multi-agency emergency rescue dispatch (SDRF/ITBP/NDRF), and complete iOS & Android mobile optimization.
 
 <p>
@@ -122,7 +139,7 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University UP) buil
 
 ---
 
-#### **2. SIRUS — Enterprise Multi-Tenant Quantitative Engine & Algorithmic Trading Platform**
+#### **3. SIRUS — Enterprise Multi-Tenant Quantitative Engine & Algorithmic Trading Platform**
 > High-throughput systematic trading SaaS with direct market access (Zerodha Kite, Alpaca, KuCoin, Interactive Brokers, AngelOne, Upstox, Groww), sub-100ms vectorized NumPy/Pandas strategy backtesting, AES-256 envelope-encrypted Demat key vault, interactive on-page parameter simulator, and Paddle Billing design system.
 
 <p>
@@ -139,7 +156,7 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University UP) buil
 
 ---
 
-#### **3. AI Developer Copilot & Career Intelligence Platform**
+#### **4. AI Developer Copilot & Career Intelligence Platform**
 > Full-stack talent intelligence engine parsing resumes, JDs, and public profile data (GitHub/LinkedIn) to power semantic ATS scoring, vector-based skill gap identification, salary regression predictions, and mock interview generation.
 
 <p>
