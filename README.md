@@ -118,7 +118,7 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University UP) buil
   <img src="https://img.shields.io/badge/Docker_Compose-Multi--Container-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
 </p>
 
-[→ Live Demo](https://frontend-mu-roan-llgeruknl5.vercel.app) &nbsp;|&nbsp; [→ Source Code](https://github.com/arnnnnaaavvvvv/CLUDE)
+[→ Live Demo](https://frontend-mu-roan-llgeruknl5.vercel.app) &nbsp;|&nbsp; [→ Source Code](https://github.com/arnnnnaaavvvvv/CLUDE) &nbsp;|&nbsp; [→ Architecture Spec](https://github.com/arnnnnaaavvvvv/CLUDE/blob/main/ARCHITECTURE.md)
 
 ---
 
