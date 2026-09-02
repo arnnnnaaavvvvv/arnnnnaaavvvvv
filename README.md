@@ -20,6 +20,34 @@
 
 </div>
 
+<div align="center">
+
+### 🏆 GitHub Achievements
+
+<p align="center">
+  <a href="https://github.com/arnnnnaaavvvvv?tab=achievements">
+    <img src="https://github.githubassets.com/images/modules/profile/achievements/quickdraw-default.png" width="80" alt="Quickdraw" title="Quickdraw" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/arnnnnaaavvvvv?tab=achievements">
+    <img src="https://github.githubassets.com/images/modules/profile/achievements/pull-shark-default.png" width="80" alt="Pull Shark" title="Pull Shark" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/arnnnnaaavvvvv?tab=achievements">
+    <img src="https://github.githubassets.com/images/modules/profile/achievements/yolo-default.png" width="80" alt="YOLO" title="YOLO" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/arnnnnaaavvvvv?tab=achievements">
+    <img src="https://github.githubassets.com/images/modules/profile/achievements/pair-extraordinaire-default.png" width="80" alt="Pair Extraordinaire" title="Pair Extraordinaire" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/arnnnnaaavvvvv?tab=achievements">
+    <img src="https://github.githubassets.com/images/modules/profile/achievements/galaxy-brain-default.png" width="80" alt="Galaxy Brain" title="Galaxy Brain" />
+  </a>
+</p>
+
+</div>
+
 ---
 
 ### ⚡ Overview
