@@ -193,31 +193,62 @@ async function processCards() {
     totalContributions = gqlTotal;
   }
 
-  // 3. Fetch live commits across repos
-  let calculatedCommits = 223;
+  // 3. Fetch live commits across all repos (public + private)
+  let calculatedCommits = 310;
   try {
-    const reposRes = await fetch(`https://api.github.com/users/${username}/repos?per_page=100`);
-    if (reposRes.ok) {
-      const repos = await reposRes.json();
-      if (Array.isArray(repos)) {
-        let commitSum = 0;
-        for (const repo of repos) {
-          let page = 1;
-          while (true) {
-            const cRes = await fetch(`https://api.github.com/repos/${username}/${repo.name}/commits?per_page=100&page=${page}`);
-            if (!cRes.ok) break;
-            const cList = await cRes.json();
-            if (!Array.isArray(cList) || cList.length === 0) break;
-            commitSum += cList.length;
-            if (cList.length < 100) break;
-            page++;
+    const headers = {
+      'User-Agent': 'node-fetch',
+      'Accept': 'application/vnd.github+json'
+    };
+    if (token) headers['Authorization'] = `Bearer ${token}`;
+
+    let repos = [];
+    let rPage = 1;
+    while (true) {
+      const reposUrl = token
+        ? `https://api.github.com/user/repos?per_page=100&affiliation=owner,collaborator&page=${rPage}`
+        : `https://api.github.com/users/${username}/repos?per_page=100&page=${rPage}`;
+      const reposRes = await fetch(reposUrl, { headers });
+      if (!reposRes.ok) break;
+      const list = await reposRes.json();
+      if (!Array.isArray(list) || list.length === 0) break;
+      repos = repos.concat(list);
+      if (list.length < 100) break;
+      rPage++;
+    }
+
+    if (repos.length > 0) {
+      let commitSum = 0;
+      for (const repo of repos) {
+        let page = 1;
+        while (true) {
+          const owner = repo.owner?.login || username;
+          const cRes = await fetch(`https://api.github.com/repos/${owner}/${repo.name}/commits?per_page=100&page=${page}`, { headers });
+          if (!cRes.ok) break;
+          const cList = await cRes.json();
+          if (!Array.isArray(cList) || cList.length === 0) break;
+          for (const c of cList) {
+            const aLogin = c.author?.login?.toLowerCase();
+            const cLogin = c.committer?.login?.toLowerCase();
+            const aEmail = c.commit?.author?.email?.toLowerCase();
+            const aName = c.commit?.author?.name?.toLowerCase();
+            if (
+              aLogin === username.toLowerCase() ||
+              cLogin === username.toLowerCase() ||
+              (aEmail && (aEmail.includes('arnav') || aEmail.includes('arnnnnaaavvvvv'))) ||
+              (aName && aName.includes('arnav'))
+            ) {
+              commitSum++;
+            }
           }
+          if (cList.length < 100) break;
+          page++;
         }
-        if (commitSum > 0) calculatedCommits = commitSum;
       }
+      if (commitSum > 0) calculatedCommits = commitSum;
     }
   } catch (err) {
-    console.warn('Using cached commits count:', err.message);
+    console.warn('Using fallback commits count:', err.message);
   }
 
   // 4. Process 3-stats.svg
