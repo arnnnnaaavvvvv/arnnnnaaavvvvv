@@ -26,6 +26,10 @@
 
 <p align="center">
   <a href="https://github.com/arnnnnaaavvvvv?tab=achievements">
+    <img src="https://github.githubassets.com/images/modules/profile/achievements/pair-extraordinaire-default.png" width="80" alt="Pair Extraordinaire" title="Pair Extraordinaire" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/arnnnnaaavvvvv?tab=achievements">
     <img src="https://github.githubassets.com/images/modules/profile/achievements/quickdraw-default.png" width="80" alt="Quickdraw" title="Quickdraw" />
   </a>
   &nbsp;&nbsp;
