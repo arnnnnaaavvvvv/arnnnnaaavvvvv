@@ -142,17 +142,116 @@ async function fetchGraphQLContributions(username, token) {
   }
 }
 
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+function formatDate(isoStr) {
+  const [year, month, day] = isoStr.split('-').map(Number);
+  return `${MONTHS[month - 1]} ${day}`;
+}
+
+async function fetchContributionCalendarStreak(username) {
+  try {
+    const res = await fetch(`https://github.com/users/${username}/contributions`, {
+      headers: { 'User-Agent': 'Mozilla/5.0' }
+    });
+    if (!res.ok) return null;
+    const html = await res.text();
+
+    let totalContributions = null;
+    const totalMatch = html.match(/<h2[^>]*id="js-contribution-activity-description"[^>]*>[\s\S]*?([0-9,]+)\s+contributions/i);
+    if (totalMatch) {
+      totalContributions = totalMatch[1].replace(/,/g, '');
+    }
+
+    const regex = /data-date="([^"]+)"[^>]*data-level="([0-9]+)"/g;
+    let match;
+    const daysMap = new Map();
+    while ((match = regex.exec(html)) !== null) {
+      daysMap.set(match[1], Number(match[2]));
+    }
+    const sortedDates = [...daysMap.keys()].sort();
+    if (sortedDates.length === 0) return null;
+
+    let maxStreak = 0;
+    let maxStreakStart = '';
+    let maxStreakEnd = '';
+    let tempStreak = 0;
+    let tempStart = '';
+
+    for (let i = 0; i < sortedDates.length; i++) {
+      const d = sortedDates[i];
+      const lvl = daysMap.get(d);
+      if (lvl > 0) {
+        if (tempStreak === 0) tempStart = d;
+        tempStreak++;
+        if (tempStreak > maxStreak) {
+          maxStreak = tempStreak;
+          maxStreakStart = tempStart;
+          maxStreakEnd = d;
+        }
+      } else {
+        tempStreak = 0;
+      }
+    }
+
+    // Current streak (ending today or yesterday)
+    const todayIso = new Date().toISOString().split('T')[0];
+    let todayIdx = sortedDates.indexOf(todayIso);
+    if (todayIdx === -1) todayIdx = sortedDates.length - 1;
+
+    if (daysMap.get(sortedDates[todayIdx]) === 0 && todayIdx > 0 && daysMap.get(sortedDates[todayIdx - 1]) > 0) {
+      todayIdx = todayIdx - 1;
+    }
+
+    let curStreak = 0;
+    let curStreakStart = '';
+    let curStreakEnd = sortedDates[todayIdx];
+    let cIdx = todayIdx;
+    while (cIdx >= 0 && daysMap.get(sortedDates[cIdx]) > 0) {
+      curStreak++;
+      curStreakStart = sortedDates[cIdx];
+      cIdx--;
+    }
+
+    const currentRange = curStreak > 0 ? `${formatDate(curStreakStart)} - ${formatDate(curStreakEnd)}` : 'No streak';
+    const longestRange = maxStreak > 0 ? `${formatDate(maxStreakStart)} - ${formatDate(maxStreakEnd)}` : 'No streak';
+
+    return {
+      totalContributions,
+      currentStreak: String(curStreak),
+      currentRange,
+      longestStreak: String(maxStreak),
+      longestRange
+    };
+  } catch (err) {
+    console.warn('Calendar scrape fallback failed:', err.message);
+    return null;
+  }
+}
+
 async function processCards() {
   const username = process.env.GH_USERNAME || (process.env.GITHUB_REPOSITORY ? process.env.GITHUB_REPOSITORY.split('/')[0] : 'arnnnnaaavvvvv');
   const token = process.env.GITHUB_TOKEN || '';
 
   // 1. Fetch live streak & contributions metrics
-  let currentStreak = '6';
-  let currentRange = 'Aug 25 - Aug 30';
-  let longestStreak = '6';
-  let longestRange = 'Aug 25 - Aug 30';
-  let totalContributions = '171';
+  let currentStreak = '18';
+  let currentRange = 'Aug 25 - Sep 11';
+  let longestStreak = '18';
+  let longestRange = 'Aug 25 - Sep 11';
+  let totalContributions = '348';
   let totalRange = 'Apr 2, 2022 - Present';
+
+  // Try direct GitHub contribution calendar parsing first
+  const calendarData = await fetchContributionCalendarStreak(username);
+  if (calendarData) {
+    if (calendarData.currentStreak) currentStreak = calendarData.currentStreak;
+    if (calendarData.currentRange) currentRange = calendarData.currentRange;
+    if (calendarData.longestStreak) longestStreak = calendarData.longestStreak;
+    if (calendarData.longestRange) longestRange = calendarData.longestRange;
+    if (calendarData.totalContributions && Number(calendarData.totalContributions) >= Number(totalContributions)) {
+      totalContributions = calendarData.totalContributions;
+    }
+  }
 
   try {
     const controller = new AbortController();
@@ -164,16 +263,16 @@ async function processCards() {
     if (response.ok) {
       const rawSvg = await response.text();
       const currMatch = rawSvg.match(/<!-- Current Streak big number -->[\s\S]*?<text[^>]*>\s*([0-9]+)\s*<\/text>/i);
-      if (currMatch) currentStreak = currMatch[1];
+      if (currMatch && Number(currMatch[1]) >= Number(currentStreak)) currentStreak = currMatch[1];
 
       const currRangeMatch = rawSvg.match(/<!-- Current Streak range -->[\s\S]*?<text[^>]*>\s*([^\n<]+)\s*<\/text>/i);
-      if (currRangeMatch) currentRange = currRangeMatch[1].trim();
+      if (currRangeMatch && currMatch && Number(currMatch[1]) >= Number(currentStreak)) currentRange = currRangeMatch[1].trim();
 
       const longMatch = rawSvg.match(/<!-- Longest Streak big number -->[\s\S]*?<text[^>]*>\s*([0-9]+)\s*<\/text>/i);
-      if (longMatch) longestStreak = longMatch[1];
+      if (longMatch && Number(longMatch[1]) >= Number(longestStreak)) longestStreak = longMatch[1];
 
       const longRangeMatch = rawSvg.match(/<!-- Longest Streak range -->[\s\S]*?<text[^>]*>\s*([^\n<]+)\s*<\/text>/i);
-      if (longRangeMatch) longestRange = longRangeMatch[1].trim();
+      if (longRangeMatch && longMatch && Number(longMatch[1]) >= Number(longestStreak)) longestRange = longRangeMatch[1].trim();
 
       const totalMatch = rawSvg.match(/<!-- Total Contributions big number -->[\s\S]*?<text[^>]*>\s*([0-9]+)\s*<\/text>/i);
       if (totalMatch && Number(totalMatch[1]) >= Number(totalContributions)) {
@@ -184,7 +283,7 @@ async function processCards() {
       if (totalRangeMatch) totalRange = totalRangeMatch[1].trim();
     }
   } catch (err) {
-    console.warn('Using fallback streak values:', err.message);
+    console.warn('Streak API fallback:', err.message);
   }
 
   // 2. Query GitHub GraphQL directly if token available
@@ -194,7 +293,7 @@ async function processCards() {
   }
 
   // 3. Fetch live commits across all repos (every commit in the git tree)
-  let calculatedCommits = 506;
+  let calculatedCommits = 602;
   try {
     const headers = {
       'User-Agent': 'node-fetch',
