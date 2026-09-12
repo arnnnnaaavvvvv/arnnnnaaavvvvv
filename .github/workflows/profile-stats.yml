@@ -2,8 +2,8 @@ name: Update GitHub Profile Stats & Metrics
 
 on:
   schedule:
-    # Runs every hour automatically for live synchronization across all your repos
-    - cron: "0 * * * *"
+    # Runs every 6 hours automatically for live synchronization across all your repos
+    - cron: "0 */6 * * *"
   push:
     branches:
       - main
@@ -23,6 +23,17 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Generate Contribution Grid Snake Animation
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/github-contribution-grid-snake.svg
+            assets/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=%2322D3EE
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+
       - name: Generate Profile Summary Cards
         uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
@@ -39,6 +50,7 @@ jobs:
           GH_USERNAME: ${{ github.repository_owner }}
           GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN }}
         run: node .github/scripts/format-cards.js
+        continue-on-error: true
 
       - name: Commit and Push Updated Stats
         run: |
@@ -46,6 +58,6 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
           if ! git diff-index --quiet HEAD; then
-            git commit -m "chore(stats): auto-update live metrics and contribution cards [skip ci]"
+            git commit -m "chore(stats): auto-update live metrics and contribution snake [skip ci]"
             git push origin main
           fi
