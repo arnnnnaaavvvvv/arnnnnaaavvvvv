@@ -34,6 +34,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         continue-on-error: true
 
+      - name: Keep Snake Strictly Inside Box Bounds
+        run: node .github/scripts/clamp-snake-bounds.js
+        continue-on-error: true
+
       - name: Generate Profile Summary Cards
         uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
