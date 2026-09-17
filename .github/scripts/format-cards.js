@@ -7,7 +7,7 @@ const profileDetailsPath = path.join(dir, '0-profile-details.svg');
 const streakStatsPath = path.join(dir, 'streak-stats.svg');
 const statsCardPath = path.join(dir, '3-stats.svg');
 
-function createThreeColumnStreakSvg(totalContributions = '171', totalRange = 'Apr 2, 2022 - Present', currentStreak = '6', currentRange = 'Aug 25 - Aug 30', longestStreak = '6', longestRange = 'Aug 25 - Aug 30') {
+function createThreeColumnStreakSvg(totalContributions = '406', totalRange = 'Apr 2, 2022 - Present', currentStreak = '24', currentRange = 'Aug 25 - Sep 17', longestStreak = '24', longestRange = 'Aug 25 - Sep 17') {
   return `<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'
         style='isolation: isolate' viewBox='0 0 495 195' width='495px' height='195px' direction='ltr'>
     <style>
@@ -241,7 +241,7 @@ async function processCards() {
   let currentRange = 'Aug 25 - Sep 17';
   let longestStreak = '24';
   let longestRange = 'Aug 25 - Sep 17';
-  let totalContributions = '335';
+  let totalContributions = '406';
   let totalRange = 'Apr 2, 2022 - Present';
 
   // Try direct GitHub contribution calendar parsing first
@@ -251,7 +251,7 @@ async function processCards() {
     if (calendarData.currentRange) currentRange = calendarData.currentRange;
     if (calendarData.longestStreak) longestStreak = calendarData.longestStreak;
     if (calendarData.longestRange) longestRange = calendarData.longestRange;
-    if (calendarData.totalContributions) {
+    if (calendarData.totalContributions && Number(calendarData.totalContributions) >= Number(totalContributions)) {
       totalContributions = calendarData.totalContributions;
     }
   }
@@ -278,7 +278,7 @@ async function processCards() {
       if (longRangeMatch && longMatch) longestRange = longRangeMatch[1].trim();
 
       const totalMatch = rawSvg.match(/<!-- Total Contributions big number -->[\s\S]*?<text[^>]*>\s*([0-9]+)\s*<\/text>/i);
-      if (totalMatch) {
+      if (totalMatch && Number(totalMatch[1]) >= Number(totalContributions)) {
         totalContributions = totalMatch[1];
       }
 
@@ -291,7 +291,7 @@ async function processCards() {
 
   // 2. Query GitHub GraphQL directly if token available
   const gqlTotal = await fetchGraphQLContributions(username, token);
-  if (gqlTotal) {
+  if (gqlTotal && Number(gqlTotal) >= Number(totalContributions)) {
     totalContributions = gqlTotal;
   }
 
