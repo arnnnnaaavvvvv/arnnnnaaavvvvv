@@ -293,8 +293,8 @@ async function processCards() {
     totalContributions = gqlTotal;
   }
 
-  // 3. Fetch live commits authored in existing repos
-  let calculatedCommits = 264;
+  // 3. Fetch live commits across existing repos (excluding external forks like first-contributions)
+  let calculatedCommits = 712;
   try {
     const headers = {
       'User-Agent': 'node-fetch',
@@ -302,27 +302,11 @@ async function processCards() {
     };
     if (token) headers['Authorization'] = `Bearer ${token}`;
 
-    // Fast and accurate: GitHub Search API for commits authored by this user
-    try {
-      const searchRes = await fetch(`https://api.github.com/search/commits?q=author:${username}`, {
-        headers: { ...headers, 'Accept': 'application/vnd.github.cloak-preview' }
-      });
-      if (searchRes.ok) {
-        const searchData = await searchRes.json();
-        if (typeof searchData.total_count === 'number' && searchData.total_count > 0) {
-          calculatedCommits = searchData.total_count;
-        }
-      }
-    } catch (sErr) {
-      console.warn('Search commits query failed, falling back to repo inspection:', sErr.message);
-    }
-
-    // Inspect existing non-fork repositories owned by the user
     let repos = [];
     let rPage = 1;
     while (true) {
       const reposUrl = token
-        ? `https://api.github.com/user/repos?per_page=100&affiliation=owner&page=${rPage}`
+        ? `https://api.github.com/user/repos?per_page=100&affiliation=owner,collaborator&page=${rPage}`
         : `https://api.github.com/users/${username}/repos?per_page=100&page=${rPage}`;
       const reposRes = await fetch(reposUrl, { headers });
       if (!reposRes.ok) break;
@@ -336,20 +320,26 @@ async function processCards() {
     if (repos.length > 0) {
       let commitSum = 0;
       for (const repo of repos) {
-        if (repo.fork) continue; // Skip forks like first-contributions
-        let page = 1;
-        while (true) {
-          const owner = repo.owner?.login || username;
-          const cRes = await fetch(`https://api.github.com/repos/${owner}/${repo.name}/commits?author=${username}&per_page=100&page=${page}`, { headers });
-          if (!cRes.ok) break;
-          const cList = await cRes.json();
-          if (!Array.isArray(cList) || cList.length === 0) break;
-          commitSum += cList.length;
-          if (cList.length < 100) break;
-          page++;
+        if (repo.fork) continue; // Skip external forks like first-contributions!
+        const owner = repo.owner?.login || username;
+        try {
+          const cRes = await fetch(`https://api.github.com/repos/${owner}/${repo.name}/commits?per_page=1`, { headers });
+          if (!cRes.ok) continue;
+          const link = cRes.headers.get('link') || cRes.headers.get('Link');
+          if (link) {
+            const match = link.match(/page=([0-9]+)>; rel="last"/);
+            if (match) {
+              commitSum += parseInt(match[1], 10);
+              continue;
+            }
+          }
+          const list = await cRes.json();
+          if (Array.isArray(list)) commitSum += list.length;
+        } catch (cErr) {
+          console.warn(`Could not get commits for ${repo.name}:`, cErr.message);
         }
       }
-      if (commitSum > 0) calculatedCommits = Math.max(calculatedCommits, commitSum);
+      if (commitSum > 0) calculatedCommits = commitSum;
     }
   } catch (err) {
     console.warn('Using fallback commits count:', err.message);
