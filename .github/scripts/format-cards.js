@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const dir = path.join(__dirname, '..', '..', 'profile-summary-card-output', 'tokyonight');
+const profileDetailsPath = path.join(dir, '0-profile-details.svg');
 const streakStatsPath = path.join(dir, 'streak-stats.svg');
 const statsCardPath = path.join(dir, '3-stats.svg');
 
@@ -234,11 +235,11 @@ async function processCards() {
   const token = process.env.GITHUB_TOKEN || '';
 
   // 1. Fetch live streak & contributions metrics
-  let currentStreak = '18';
-  let currentRange = 'Aug 25 - Sep 11';
-  let longestStreak = '18';
-  let longestRange = 'Aug 25 - Sep 11';
-  let totalContributions = '348';
+  let currentStreak = '24';
+  let currentRange = 'Aug 25 - Sep 17';
+  let longestStreak = '24';
+  let longestRange = 'Aug 25 - Sep 17';
+  let totalContributions = '335';
   let totalRange = 'Apr 2, 2022 - Present';
 
   // Try direct GitHub contribution calendar parsing first
@@ -248,7 +249,7 @@ async function processCards() {
     if (calendarData.currentRange) currentRange = calendarData.currentRange;
     if (calendarData.longestStreak) longestStreak = calendarData.longestStreak;
     if (calendarData.longestRange) longestRange = calendarData.longestRange;
-    if (calendarData.totalContributions && Number(calendarData.totalContributions) >= Number(totalContributions)) {
+    if (calendarData.totalContributions) {
       totalContributions = calendarData.totalContributions;
     }
   }
@@ -263,19 +264,19 @@ async function processCards() {
     if (response.ok) {
       const rawSvg = await response.text();
       const currMatch = rawSvg.match(/<!-- Current Streak big number -->[\s\S]*?<text[^>]*>\s*([0-9]+)\s*<\/text>/i);
-      if (currMatch && Number(currMatch[1]) >= Number(currentStreak)) currentStreak = currMatch[1];
+      if (currMatch) currentStreak = currMatch[1];
 
       const currRangeMatch = rawSvg.match(/<!-- Current Streak range -->[\s\S]*?<text[^>]*>\s*([^\n<]+)\s*<\/text>/i);
-      if (currRangeMatch && currMatch && Number(currMatch[1]) >= Number(currentStreak)) currentRange = currRangeMatch[1].trim();
+      if (currRangeMatch && currMatch) currentRange = currRangeMatch[1].trim();
 
       const longMatch = rawSvg.match(/<!-- Longest Streak big number -->[\s\S]*?<text[^>]*>\s*([0-9]+)\s*<\/text>/i);
-      if (longMatch && Number(longMatch[1]) >= Number(longestStreak)) longestStreak = longMatch[1];
+      if (longMatch) longestStreak = longMatch[1];
 
       const longRangeMatch = rawSvg.match(/<!-- Longest Streak range -->[\s\S]*?<text[^>]*>\s*([^\n<]+)\s*<\/text>/i);
-      if (longRangeMatch && longMatch && Number(longMatch[1]) >= Number(longestStreak)) longestRange = longRangeMatch[1].trim();
+      if (longRangeMatch && longMatch) longestRange = longRangeMatch[1].trim();
 
       const totalMatch = rawSvg.match(/<!-- Total Contributions big number -->[\s\S]*?<text[^>]*>\s*([0-9]+)\s*<\/text>/i);
-      if (totalMatch && Number(totalMatch[1]) >= Number(totalContributions)) {
+      if (totalMatch) {
         totalContributions = totalMatch[1];
       }
 
@@ -288,7 +289,7 @@ async function processCards() {
 
   // 2. Query GitHub GraphQL directly if token available
   const gqlTotal = await fetchGraphQLContributions(username, token);
-  if (gqlTotal && Number(gqlTotal) >= Number(totalContributions)) {
+  if (gqlTotal) {
     totalContributions = gqlTotal;
   }
 
@@ -354,7 +355,15 @@ function createStatsCardSvg(stars = '40', commits = '506', prs = '28', issues = 
   }
   console.log(`Successfully updated 3-stats.svg (Total Commits: ${calculatedCommits})`);
 
-  // 5. Generate clean 3-column Streak & Total Contributions Card
+  // 5. Update 0-profile-details.svg if present
+  if (fs.existsSync(profileDetailsPath)) {
+    let detailsSvg = fs.readFileSync(profileDetailsPath, 'utf8');
+    detailsSvg = detailsSvg.replace(/(<text x="21" y="14" class="gpsc-item"[^>]*>)[0-9]+(\s+Contributions on GitHub<\/text>)/, `$1${totalContributions}$2`);
+    fs.writeFileSync(profileDetailsPath, detailsSvg.trim(), 'utf8');
+    console.log(`Successfully updated 0-profile-details.svg (Contributions: ${totalContributions})`);
+  }
+
+  // 6. Generate clean 3-column Streak & Total Contributions Card
   const cleanStreakSvg = createThreeColumnStreakSvg(totalContributions, totalRange, currentStreak, currentRange, longestStreak, longestRange);
   fs.writeFileSync(streakStatsPath, cleanStreakSvg.trim(), 'utf8');
   console.log(`Successfully generated 3-column streak & total contributions card (Total: ${totalContributions}, Current: ${currentStreak}, Longest: ${longestStreak})`);
