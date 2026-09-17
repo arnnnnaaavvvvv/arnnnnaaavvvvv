@@ -293,8 +293,8 @@ async function processCards() {
     totalContributions = gqlTotal;
   }
 
-  // 3. Fetch live commits across all repos (every commit in the git tree)
-  let calculatedCommits = 602;
+  // 3. Fetch live commits authored in existing repos
+  let calculatedCommits = 264;
   try {
     const headers = {
       'User-Agent': 'node-fetch',
@@ -302,11 +302,27 @@ async function processCards() {
     };
     if (token) headers['Authorization'] = `Bearer ${token}`;
 
+    // Fast and accurate: GitHub Search API for commits authored by this user
+    try {
+      const searchRes = await fetch(`https://api.github.com/search/commits?q=author:${username}`, {
+        headers: { ...headers, 'Accept': 'application/vnd.github.cloak-preview' }
+      });
+      if (searchRes.ok) {
+        const searchData = await searchRes.json();
+        if (typeof searchData.total_count === 'number' && searchData.total_count > 0) {
+          calculatedCommits = searchData.total_count;
+        }
+      }
+    } catch (sErr) {
+      console.warn('Search commits query failed, falling back to repo inspection:', sErr.message);
+    }
+
+    // Inspect existing non-fork repositories owned by the user
     let repos = [];
     let rPage = 1;
     while (true) {
       const reposUrl = token
-        ? `https://api.github.com/user/repos?per_page=100&affiliation=owner,collaborator&page=${rPage}`
+        ? `https://api.github.com/user/repos?per_page=100&affiliation=owner&page=${rPage}`
         : `https://api.github.com/users/${username}/repos?per_page=100&page=${rPage}`;
       const reposRes = await fetch(reposUrl, { headers });
       if (!reposRes.ok) break;
@@ -320,10 +336,11 @@ async function processCards() {
     if (repos.length > 0) {
       let commitSum = 0;
       for (const repo of repos) {
+        if (repo.fork) continue; // Skip forks like first-contributions
         let page = 1;
         while (true) {
           const owner = repo.owner?.login || username;
-          const cRes = await fetch(`https://api.github.com/repos/${owner}/${repo.name}/commits?per_page=100&page=${page}`, { headers });
+          const cRes = await fetch(`https://api.github.com/repos/${owner}/${repo.name}/commits?author=${username}&per_page=100&page=${page}`, { headers });
           if (!cRes.ok) break;
           const cList = await cRes.json();
           if (!Array.isArray(cList) || cList.length === 0) break;

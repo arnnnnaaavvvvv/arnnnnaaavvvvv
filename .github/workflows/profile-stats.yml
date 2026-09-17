@@ -52,7 +52,7 @@ jobs:
       - name: Format Profile Summary Card Headers
         env:
           GH_USERNAME: ${{ github.repository_owner }}
-          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
         run: node .github/scripts/format-cards.js
         continue-on-error: true
 
