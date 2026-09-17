@@ -118,6 +118,7 @@ async function fetchGraphQLContributions(username, token) {
               contributionCalendar {
                 totalContributions
               }
+              restrictedContributionsCount
             }
           }
         }
@@ -134,7 +135,8 @@ async function fetchGraphQLContributions(username, token) {
       if (res.ok) {
         const data = await res.json();
         const yearCount = data?.data?.user?.contributionsCollection?.contributionCalendar?.totalContributions || 0;
-        total += yearCount;
+        const privateCount = data?.data?.user?.contributionsCollection?.restrictedContributionsCount || 0;
+        total += (yearCount + privateCount);
       }
     }
     return total > 0 ? String(total) : null;
@@ -306,7 +308,7 @@ async function processCards() {
     let rPage = 1;
     while (true) {
       const reposUrl = token
-        ? `https://api.github.com/user/repos?per_page=100&affiliation=owner,collaborator&page=${rPage}`
+        ? `https://api.github.com/user/repos?visibility=all&per_page=100&affiliation=owner,collaborator&page=${rPage}`
         : `https://api.github.com/users/${username}/repos?per_page=100&page=${rPage}`;
       const reposRes = await fetch(reposUrl, { headers });
       if (!reposRes.ok) break;
