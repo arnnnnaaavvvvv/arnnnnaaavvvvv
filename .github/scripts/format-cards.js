@@ -7,7 +7,7 @@ const profileDetailsPath = path.join(dir, '0-profile-details.svg');
 const streakStatsPath = path.join(dir, 'streak-stats.svg');
 const statsCardPath = path.join(dir, '3-stats.svg');
 
-function createThreeColumnStreakSvg(totalContributions = '406', totalRange = 'Apr 2, 2022 - Present', currentStreak = '24', currentRange = 'Aug 25 - Sep 17', longestStreak = '24', longestRange = 'Aug 25 - Sep 17') {
+function createThreeColumnStreakSvg(totalContributions = '339', totalRange = 'Apr 2, 2022 - Present', currentStreak = '24', currentRange = 'Aug 25 - Sep 17', longestStreak = '24', longestRange = 'Aug 25 - Sep 17') {
   return `<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'
         style='isolation: isolate' viewBox='0 0 495 195' width='495px' height='195px' direction='ltr'>
     <style>
@@ -145,6 +145,28 @@ async function fetchGraphQLContributions(username, token) {
   }
 }
 
+async function fetchMultiYearContributions(username) {
+  try {
+    const currentYear = new Date().getFullYear();
+    let total = 0;
+    for (let year = 2022; year <= currentYear; year++) {
+      const url = `https://github.com/users/${username}/contributions?from=${year}-01-01&to=${year}-12-31`;
+      const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
+      if (res.ok) {
+        const html = await res.text();
+        const m = html.match(/([0-9,]+)\s+contribution/i);
+        if (m) {
+          total += parseInt(m[1].replace(/,/g, ''), 10);
+        }
+      }
+    }
+    return total > 0 ? String(total) : null;
+  } catch (err) {
+    console.warn('Multi-year contribution fetch failed:', err.message);
+    return null;
+  }
+}
+
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
 function formatDate(isoStr) {
@@ -232,6 +254,12 @@ async function fetchContributionCalendarStreak(username) {
   }
 }
 
+function createStatsCardSvg(stars = '39', commits = '257', prs = '28', issues = '1', contributed = '8') {
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="340" height="200" viewBox="0 0 340 200"><style>* {
+          font-family: 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif
+        }</style><g class="gpsc-root"><rect x="1" y="1" rx="5" ry="5" height="99%" width="99.41176470588235%" stroke="#1a1b27" stroke-width="1" fill="#1a1b27" stroke-opacity="1"></rect><text x="30" y="40" class="gpsc-item" style="--gpsc-i: 0; font-size: 22px; fill: #70a5fd;">Stats</text><g transform="translate(0,40)"><g transform="translate(30,20)"><g class="gpsc-item" style="--gpsc-i: 0;"><g transform="translate(0,0)" width="14" height="14" fill="#bf91f3"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path></g></g><g class="gpsc-item" style="--gpsc-i: 1;"><g transform="translate(0,25.2)" width="14" height="14" fill="#bf91f3"><path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"></path></g></g><g class="gpsc-item" style="--gpsc-i: 2;"><g transform="translate(0,50.4)" width="14" height="14" fill="#bf91f3"><path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"></path></g></g><g class="gpsc-item" style="--gpsc-i: 3;"><g transform="translate(0,75.60000000000001)" width="14" height="14" fill="#bf91f3"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zm-.25-6.25a.75.75 0 00-1.5 0v3.5a.75.75 0 001.5 0v-3.5z"></path></g></g><g class="gpsc-item" style="--gpsc-i: 4;"><g transform="translate(0,100.8)" width="14" height="14" fill="#bf91f3"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></g></g><text x="21" y="14" class="gpsc-item" style="--gpsc-i: 0; fill: #38bdae; font-size: 14px;">Total Stars:</text><text x="21" y="39.2" class="gpsc-item" style="--gpsc-i: 1; fill: #38bdae; font-size: 14px;">Total Commits:</text><text x="21" y="64.4" class="gpsc-item" style="--gpsc-i: 2; fill: #38bdae; font-size: 14px;">Total PRs:</text><text x="21" y="89.60000000000001" class="gpsc-item" style="--gpsc-i: 3; fill: #38bdae; font-size: 14px;">Total Issues:</text><text x="21" y="114.8" class="gpsc-item" style="--gpsc-i: 4; fill: #38bdae; font-size: 14px;">Contributed to:</text><text x="130" y="14" class="gpsc-item" style="--gpsc-i: 0; fill: #38bdae; font-size: 14px;">${stars}</text><text x="130" y="39.2" class="gpsc-item" style="--gpsc-i: 1; fill: #38bdae; font-size: 14px;">${commits}</text><text x="130" y="64.4" class="gpsc-item" style="--gpsc-i: 2; fill: #38bdae; font-size: 14px;">${prs}</text><text x="130" y="89.60000000000001" class="gpsc-item" style="--gpsc-i: 3; fill: #38bdae; font-size: 14px;">${issues}</text><text x="130" y="114.8" class="gpsc-item" style="--gpsc-i: 4; fill: #38bdae; font-size: 14px;">${contributed}</text></g><g transform="translate(220,20)"><g transform="scale(6)" style="fill: #bf91f3;"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></g></g></g></g></svg>`;
+}
+
 async function processCards() {
   const username = process.env.GH_USERNAME || (process.env.GITHUB_REPOSITORY ? process.env.GITHUB_REPOSITORY.split('/')[0] : 'arnnnnaaavvvvv');
   const token = process.env.GITHUB_TOKEN || '';
@@ -241,21 +269,19 @@ async function processCards() {
   let currentRange = 'Aug 25 - Sep 17';
   let longestStreak = '24';
   let longestRange = 'Aug 25 - Sep 17';
-  let totalContributions = '406';
+  let totalContributions = '339'; // Default exact multi-year total since 2022
   let totalRange = 'Apr 2, 2022 - Present';
 
-  // Try direct GitHub contribution calendar parsing first
+  // Try direct GitHub contribution calendar parsing
   const calendarData = await fetchContributionCalendarStreak(username);
   if (calendarData) {
     if (calendarData.currentStreak) currentStreak = calendarData.currentStreak;
     if (calendarData.currentRange) currentRange = calendarData.currentRange;
     if (calendarData.longestStreak) longestStreak = calendarData.longestStreak;
     if (calendarData.longestRange) longestRange = calendarData.longestRange;
-    if (calendarData.totalContributions && Number(calendarData.totalContributions) >= Number(totalContributions)) {
-      totalContributions = calendarData.totalContributions;
-    }
   }
 
+  // Try streak API
   try {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 6000);
@@ -278,7 +304,7 @@ async function processCards() {
       if (longRangeMatch && longMatch) longestRange = longRangeMatch[1].trim();
 
       const totalMatch = rawSvg.match(/<!-- Total Contributions big number -->[\s\S]*?<text[^>]*>\s*([0-9]+)\s*<\/text>/i);
-      if (totalMatch && Number(totalMatch[1]) >= Number(totalContributions)) {
+      if (totalMatch && Number(totalMatch[1]) > 0) {
         totalContributions = totalMatch[1];
       }
 
@@ -289,14 +315,22 @@ async function processCards() {
     console.warn('Streak API fallback:', err.message);
   }
 
-  // 2. Query GitHub GraphQL directly if token available
+  // Query multi-year contribution pages (2022 to present)
+  const multiYearContribs = await fetchMultiYearContributions(username);
+  if (multiYearContribs && Number(multiYearContribs) > 0) {
+    totalContributions = multiYearContribs;
+  }
+
+  // Query GitHub GraphQL directly if token available
   const gqlTotal = await fetchGraphQLContributions(username, token);
-  if (gqlTotal && Number(gqlTotal) >= Number(totalContributions)) {
+  if (gqlTotal && Number(gqlTotal) > 0) {
     totalContributions = gqlTotal;
   }
 
-  // 3. Fetch live commits across existing repos (excluding external forks like first-contributions)
-  let calculatedCommits = 712;
+  // 2. Fetch live commits and stars across existing repos (excluding external forks & automated bots)
+  let calculatedCommits = 257;
+  let calculatedStars = 39;
+
   try {
     const headers = {
       'User-Agent': 'node-fetch',
@@ -321,50 +355,74 @@ async function processCards() {
 
     if (repos.length > 0) {
       let commitSum = 0;
+      let starsSum = 0;
+
       for (const repo of repos) {
-        if (repo.fork) continue; // Skip external forks like first-contributions!
+        if (repo.fork) continue; // Skip external forks
+        starsSum += (repo.stargazers_count || 0);
+
         const owner = repo.owner?.login || username;
+        const isProfileRepo = repo.name.toLowerCase() === username.toLowerCase();
+
         try {
-          const cRes = await fetch(`https://api.github.com/repos/${owner}/${repo.name}/commits?per_page=1`, { headers });
-          if (!cRes.ok) continue;
-          const link = cRes.headers.get('link') || cRes.headers.get('Link');
-          if (link) {
-            const match = link.match(/page=([0-9]+)>; rel="last"/);
-            if (match) {
-              commitSum += parseInt(match[1], 10);
-              continue;
+          if (isProfileRepo) {
+            // In the profile repo, filter for user commits to exclude automated bot runs
+            const cRes = await fetch(`https://api.github.com/repos/${owner}/${repo.name}/commits?author=${username}&per_page=1`, { headers });
+            if (cRes.ok) {
+              const link = cRes.headers.get('link') || cRes.headers.get('Link');
+              if (link) {
+                const match = link.match(/page=([0-9]+)>; rel="last"/);
+                if (match) {
+                  commitSum += parseInt(match[1], 10);
+                  continue;
+                }
+              }
+              const list = await cRes.json();
+              if (Array.isArray(list)) commitSum += list.length;
+            }
+          } else {
+            // For existing project repos, all commits are created by the user
+            const cRes = await fetch(`https://api.github.com/repos/${owner}/${repo.name}/commits?per_page=1`, { headers });
+            if (cRes.ok) {
+              const link = cRes.headers.get('link') || cRes.headers.get('Link');
+              if (link) {
+                const match = link.match(/page=([0-9]+)>; rel="last"/);
+                if (match) {
+                  commitSum += parseInt(match[1], 10);
+                  continue;
+                }
+              }
+              const list = await cRes.json();
+              if (Array.isArray(list)) commitSum += list.length;
             }
           }
-          const list = await cRes.json();
-          if (Array.isArray(list)) commitSum += list.length;
         } catch (cErr) {
           console.warn(`Could not get commits for ${repo.name}:`, cErr.message);
         }
       }
+
       if (commitSum > 0) calculatedCommits = commitSum;
+      if (starsSum > 0) calculatedStars = starsSum;
     }
   } catch (err) {
-    console.warn('Using fallback commits count:', err.message);
+    console.warn('Using fallback commits/stars count:', err.message);
   }
 
-function createStatsCardSvg(stars = '40', commits = '506', prs = '28', issues = '1', contributed = '8') {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="340" height="200" viewBox="0 0 340 200"><style>* {
-          font-family: 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif
-        }</style><g class="gpsc-root"><rect x="1" y="1" rx="5" ry="5" height="99%" width="99.41176470588235%" stroke="#1a1b27" stroke-width="1" fill="#1a1b27" stroke-opacity="1"></rect><text x="30" y="40" class="gpsc-item" style="--gpsc-i: 0; font-size: 22px; fill: #70a5fd;">Stats</text><g transform="translate(0,40)"><g transform="translate(30,20)"><g class="gpsc-item" style="--gpsc-i: 0;"><g transform="translate(0,0)" width="14" height="14" fill="#bf91f3"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path></g></g><g class="gpsc-item" style="--gpsc-i: 1;"><g transform="translate(0,25.2)" width="14" height="14" fill="#bf91f3"><path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"></path></g></g><g class="gpsc-item" style="--gpsc-i: 2;"><g transform="translate(0,50.4)" width="14" height="14" fill="#bf91f3"><path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"></path></g></g><g class="gpsc-item" style="--gpsc-i: 3;"><g transform="translate(0,75.60000000000001)" width="14" height="14" fill="#bf91f3"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zm-.25-6.25a.75.75 0 00-1.5 0v3.5a.75.75 0 001.5 0v-3.5z"></path></g></g><g class="gpsc-item" style="--gpsc-i: 4;"><g transform="translate(0,100.8)" width="14" height="14" fill="#bf91f3"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></g></g><text x="21" y="14" class="gpsc-item" style="--gpsc-i: 0; fill: #38bdae; font-size: 14px;">Total Stars:</text><text x="21" y="39.2" class="gpsc-item" style="--gpsc-i: 1; fill: #38bdae; font-size: 14px;">Total Commits:</text><text x="21" y="64.4" class="gpsc-item" style="--gpsc-i: 2; fill: #38bdae; font-size: 14px;">Total PRs:</text><text x="21" y="89.60000000000001" class="gpsc-item" style="--gpsc-i: 3; fill: #38bdae; font-size: 14px;">Total Issues:</text><text x="21" y="114.8" class="gpsc-item" style="--gpsc-i: 4; fill: #38bdae; font-size: 14px;">Contributed to:</text><text x="130" y="14" class="gpsc-item" style="--gpsc-i: 0; fill: #38bdae; font-size: 14px;">${stars}</text><text x="130" y="39.2" class="gpsc-item" style="--gpsc-i: 1; fill: #38bdae; font-size: 14px;">${commits}</text><text x="130" y="64.4" class="gpsc-item" style="--gpsc-i: 2; fill: #38bdae; font-size: 14px;">${prs}</text><text x="130" y="89.60000000000001" class="gpsc-item" style="--gpsc-i: 3; fill: #38bdae; font-size: 14px;">${issues}</text><text x="130" y="114.8" class="gpsc-item" style="--gpsc-i: 4; fill: #38bdae; font-size: 14px;">${contributed}</text></g><g transform="translate(220,20)"><g transform="scale(6)" style="fill: #bf91f3;"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></g></g></g></g></svg>`;
-}
-
-  // 4. Process 3-stats.svg
+  // 3. Process 3-stats.svg
   if (fs.existsSync(statsCardPath)) {
     let statsSvg = fs.readFileSync(statsCardPath, 'utf8');
+    // Update Stars
+    statsSvg = statsSvg.replace(/(<text x="130" y="14" class="gpsc-item"[^>]*>)[0-9]+(<\/text>)/, `$1${calculatedStars}$2`);
+    // Update Commits
     statsSvg = statsSvg.replace(/(<text x="130" y="39\.2" class="gpsc-item"[^>]*>)[0-9]+(<\/text>)/, `$1${calculatedCommits}$2`);
     fs.writeFileSync(statsCardPath, statsSvg.trim(), 'utf8');
   } else {
-    const statsSvg = createStatsCardSvg('40', String(calculatedCommits), '28', '1', '8');
+    const statsSvg = createStatsCardSvg(String(calculatedStars), String(calculatedCommits), '28', '1', '8');
     fs.writeFileSync(statsCardPath, statsSvg.trim(), 'utf8');
   }
-  console.log(`Successfully updated 3-stats.svg (Total Commits: ${calculatedCommits})`);
+  console.log(`Successfully updated 3-stats.svg (Total Stars: ${calculatedStars}, Total Commits: ${calculatedCommits})`);
 
-  // 5. Update 0-profile-details.svg if present
+  // 4. Update 0-profile-details.svg if present
   if (fs.existsSync(profileDetailsPath)) {
     let detailsSvg = fs.readFileSync(profileDetailsPath, 'utf8');
     detailsSvg = detailsSvg.replace(/(<text x="21" y="14" class="gpsc-item"[^>]*>)[0-9]+(\s+Contributions on GitHub<\/text>)/, `$1${totalContributions}$2`);
@@ -372,7 +430,7 @@ function createStatsCardSvg(stars = '40', commits = '506', prs = '28', issues = 
     console.log(`Successfully updated 0-profile-details.svg (Contributions: ${totalContributions})`);
   }
 
-  // 6. Generate clean 3-column Streak & Total Contributions Card
+  // 5. Generate clean 3-column Streak & Total Contributions Card
   const cleanStreakSvg = createThreeColumnStreakSvg(totalContributions, totalRange, currentStreak, currentRange, longestStreak, longestRange);
   fs.writeFileSync(streakStatsPath, cleanStreakSvg.trim(), 'utf8');
   console.log(`Successfully generated 3-column streak & total contributions card (Total: ${totalContributions}, Current: ${currentStreak}, Longest: ${longestStreak})`);
