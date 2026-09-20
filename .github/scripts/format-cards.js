@@ -340,7 +340,7 @@ async function processCards() {
     let rPage = 1;
     while (true) {
       const reposUrl = token
-        ? `https://api.github.com/user/repos?visibility=all&per_page=100&affiliation=owner&page=${rPage}`
+        ? `https://api.github.com/user/repos?visibility=all&per_page=100&affiliation=owner,collaborator,organization_member&page=${rPage}`
         : `https://api.github.com/users/${username}/repos?per_page=100&page=${rPage}`;
       const reposRes = await fetch(reposUrl, { headers });
       if (!reposRes.ok) break;
