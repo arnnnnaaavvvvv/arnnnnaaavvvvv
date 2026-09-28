@@ -31,15 +31,19 @@
 
 <p align="center">
   <a href="https://github.com/arnnnnaaavvvvv?tab=achievements">
+    <img src="https://github.githubassets.com/images/modules/profile/achievements/pull-shark-bronze.png" width="80" alt="Pull Shark (x2)" title="Pull Shark (x2)" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/arnnnnaaavvvvv?tab=achievements">
     <img src="https://github.githubassets.com/images/modules/profile/achievements/pair-extraordinaire-default.png" width="80" alt="Pair Extraordinaire" title="Pair Extraordinaire" />
   </a>
   &nbsp;&nbsp;
   <a href="https://github.com/arnnnnaaavvvvv?tab=achievements">
-    <img src="https://github.githubassets.com/images/modules/profile/achievements/quickdraw-default.png" width="80" alt="Quickdraw" title="Quickdraw" />
+    <img src="https://github.githubassets.com/images/modules/profile/achievements/yolo-default.png" width="80" alt="YOLO" title="YOLO" />
   </a>
   &nbsp;&nbsp;
   <a href="https://github.com/arnnnnaaavvvvv?tab=achievements">
-    <img src="https://github.githubassets.com/images/modules/profile/achievements/yolo-default.png" width="80" alt="YOLO" title="YOLO" />
+    <img src="https://github.githubassets.com/images/modules/profile/achievements/quickdraw-default.png" width="80" alt="Quickdraw" title="Quickdraw" />
   </a>
 </p>
 
