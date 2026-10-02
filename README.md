@@ -70,7 +70,7 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University) focused
 <p align="center">
   <b>Languages & Core:</b><br />
   <a href="https://dev.java/" target="_blank"><img src="https://skillicons.dev/icons?i=java&theme=dark" alt="Java" /></a>
-  <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank"><img src="https://skillicons.dev/icons?i=c&theme=dark" alt="C" /></a>
+  <a href="https://en.cppreference.com/w/c" target="_blank"><img src="https://skillicons.dev/icons?i=c&theme=dark" alt="C" /></a>
   <a href="https://www.python.org/" target="_blank"><img src="https://skillicons.dev/icons?i=py&theme=dark" alt="Python" /></a>
   <a href="https://www.typescriptlang.org/" target="_blank"><img src="https://skillicons.dev/icons?i=ts&theme=dark" alt="TypeScript" /></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://skillicons.dev/icons?i=js&theme=dark" alt="JavaScript" /></a>
@@ -83,11 +83,11 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University) focused
   <a href="https://pytorch.org/" target="_blank"><img src="https://skillicons.dev/icons?i=pytorch&theme=dark" alt="PyTorch" /></a>
   <a href="https://www.tensorflow.org/" target="_blank"><img src="https://skillicons.dev/icons?i=tensorflow&theme=dark" alt="TensorFlow" /></a>
   <a href="https://scikit-learn.org/" target="_blank"><img src="https://skillicons.dev/icons?i=sklearn&theme=dark" alt="scikit-learn" /></a>
-  <a href="https://github.com/pgvector/pgvector" target="_blank"><img src="assets/icons/pgvector.svg" width="48" height="48" alt="pgvector" /></a>
-  <a href="https://github.com/nmslib/hnswlib" target="_blank"><img src="assets/icons/hnsw.svg" width="48" height="48" alt="HNSW Vector Search" /></a>
-  <a href="https://qdrant.tech/" target="_blank"><img src="assets/icons/qdrant.svg" width="48" height="48" alt="Qdrant" /></a>
-  <a href="https://openai.com/" target="_blank"><img src="assets/icons/openai.svg" width="48" height="48" alt="OpenAI API" /></a>
-  <a href="https://anthropic.com/" target="_blank"><img src="assets/icons/claude.svg" width="48" height="48" alt="Claude" /></a>
+  <a href="https://github.com/pgvector/pgvector" target="_blank"><img src="https://raw.githubusercontent.com/arnnnnaaavvvvv/arnnnnaaavvvvv/main/assets/icons/pgvector.svg" width="48" height="48" alt="pgvector" /></a>
+  <a href="https://github.com/nmslib/hnswlib" target="_blank"><img src="https://raw.githubusercontent.com/arnnnnaaavvvvv/arnnnnaaavvvvv/main/assets/icons/hnsw.svg" width="48" height="48" alt="HNSW Vector Search" /></a>
+  <a href="https://qdrant.tech/" target="_blank"><img src="https://raw.githubusercontent.com/arnnnnaaavvvvv/arnnnnaaavvvvv/main/assets/icons/qdrant.svg" width="48" height="48" alt="Qdrant" /></a>
+  <a href="https://platform.openai.com/" target="_blank"><img src="https://raw.githubusercontent.com/arnnnnaaavvvvv/arnnnnaaavvvvv/main/assets/icons/openai.svg" width="48" height="48" alt="OpenAI API" /></a>
+  <a href="https://claude.ai/" target="_blank"><img src="https://raw.githubusercontent.com/arnnnnaaavvvvv/arnnnnaaavvvvv/main/assets/icons/claude.svg" width="48" height="48" alt="Claude" /></a>
 </p>
 
 <p align="center">
@@ -95,7 +95,7 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University) focused
   <a href="https://react.dev/" target="_blank"><img src="https://skillicons.dev/icons?i=react&theme=dark" alt="React" /></a>
   <a href="https://nextjs.org/" target="_blank"><img src="https://skillicons.dev/icons?i=nextjs&theme=dark" alt="Next.js" /></a>
   <a href="https://fastapi.tiangolo.com/" target="_blank"><img src="https://skillicons.dev/icons?i=fastapi&theme=dark" alt="FastAPI" /></a>
-  <a href="https://vitejs.dev/" target="_blank"><img src="https://skillicons.dev/icons?i=vite&theme=dark" alt="Vite" /></a>
+  <a href="https://vite.dev/" target="_blank"><img src="https://skillicons.dev/icons?i=vite&theme=dark" alt="Vite" /></a>
   <a href="https://tailwindcss.com/" target="_blank"><img src="https://skillicons.dev/icons?i=tailwind&theme=dark" alt="Tailwind CSS" /></a>
   <a href="https://threejs.org/" target="_blank"><img src="https://skillicons.dev/icons?i=threejs&theme=dark" alt="Three.js" /></a>
 </p>
