@@ -55,7 +55,7 @@
 
 I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University) focused on engineering high-throughput, AI-integrated systems with architectures that prioritize inspectability, correctness, and deterministic safety over opaque black-box outputs.
 
-- **Backend & Systems:** Designing concurrent, low-latency architectures with **FastAPI**, **Spring Boot**, and **Express**, paired with **PostgreSQL**, **PostGIS**, and **Redis** for distributed geospatial routing, live caching, and sub-100ms event processing.
+- **Backend & Systems:** Designing concurrent, low-latency architectures with **FastAPI (Python)** and **Next.js**, paired with **PostgreSQL**, **PostGIS**, and **Redis** for distributed geospatial routing, live caching, and sub-100ms event processing.
 - **Applied AI & Explainability:** Architecting causal reasoning and retrieval-augmented generation (RAG) pipelines backed by **Tree-sitter AST parsing**, **pgvector/Qdrant** vector search, semantic embeddings, and deterministic risk AST evaluators where verified traceability takes precedence over hallucination.
 - **Frontend & GIS:** Crafting ultra-responsive, mobile-first interfaces using **React 19**, **Next.js 14**, **Vite**, **Tailwind CSS**, and **Leaflet.js** with curated dark-mode design systems (Midnight Navy, Deep Slate, and Emerald tokens).
 
@@ -137,7 +137,7 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University) focused
       <ul>
         <li><b>Causal Reasoning & ASTs:</b> Tree-sitter AST structural chunking, semantic git diff causality, calibrated confidence scoring</li>
         <li><b>Vector Search & RAG:</b> PostgreSQL + pgvector (HNSW cosine indexing), Qdrant vector engine, dense semantic embeddings</li>
-        <li><b>Model Orchestration:</b> Claude 3.5 Sonnet, OpenAI (embeddings & GPT-4o), structured tool calling, deterministic verification</li>
+        <li><b>Model Orchestration:</b> Claude 3.5 Sonnet & Claude 3.5 Haiku, OpenAI (GPT-4o & GPT-4o mini, embeddings), structured tool calling, deterministic verification</li>
         <li><b>Deep Learning & Biosignals:</b> PyTorch & TensorFlow models, EEG signal processing (SciPy, ssqueezepy continuous wavelets)</li>
       </ul>
     </td>
@@ -169,7 +169,7 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University) focused
 ### 🚀 Featured Engineering Systems
 
 #### **1. CLUDE — Autonomous Production Incident Root-Cause Engine & Codebase Intelligence**
-> Pinpoints the exact commit that broke production with causal AI reasoning and onboards engineers to unfamiliar codebases in minutes. Evaluates semantic causality across structural git diffs to correlate multiline stack traces (Python, Node.js/TS, Go, Java, Rust) against commit history in < 8s. Features Tree-sitter syntax-aware AST chunking, PostgreSQL 16 with `pgvector` HNSW acceleration, Claude 3.5 Sonnet / GPT-4o causal reasoning chains with calibrated confidence scoring, embedded Monaco-style syntax diff viewer, high-risk churn danger-zone detection, interactive GitHub account connection with granular repository permissions, and repo-grounded dark-mode Mermaid.js architectural topology graphs.
+> Pinpoints the exact commit that broke production with causal AI reasoning and onboards engineers to unfamiliar codebases in minutes. Evaluates semantic causality across structural git diffs to correlate multiline stack traces (Python, Node.js/TS, Go, Java, Rust) against commit history in < 8s. Features Tree-sitter syntax-aware AST chunking, PostgreSQL 16 with `pgvector` HNSW acceleration, Claude 3.5 Sonnet & Haiku / GPT-4o & GPT-4o mini causal reasoning chains with calibrated confidence scoring, embedded Monaco-style syntax diff viewer, high-risk churn danger-zone detection, interactive GitHub account connection with granular repository permissions, and repo-grounded dark-mode Mermaid.js architectural topology graphs.
 
 <p>
   <img src="https://img.shields.io/badge/FastAPI-Python_3.11+-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
@@ -177,7 +177,7 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University) focused
   <img src="https://img.shields.io/badge/PostgreSQL_16-pgvector_HNSW-336791?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL pgvector" />
   <img src="https://img.shields.io/badge/Redis_+_Celery-Async_Worker-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis Celery" />
   <img src="https://img.shields.io/badge/Tree--sitter-AST_Chunking-3572A5?style=flat-square&logo=cplusplus&logoColor=white" alt="Tree-sitter" />
-  <img src="https://img.shields.io/badge/Causal_AI-Claude_3.5_%7C_GPT--4o-D97706?style=flat-square&logo=anthropic&logoColor=white" alt="Causal AI" />
+  <img src="https://img.shields.io/badge/Causal_AI-Claude_3.5_%7C_GPT--4o_mini-D97706?style=flat-square&logo=anthropic&logoColor=white" alt="Causal AI" />
   <img src="https://img.shields.io/badge/GitHub_Connect-Granular_Sync-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub Connect" />
   <img src="https://img.shields.io/badge/Docker_Compose-Multi--Container-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
 </p>
