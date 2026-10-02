@@ -69,10 +69,10 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University) focused
 
 <p align="center">
   <b>Languages & Core:</b><br />
-  <a href="https://dev.java/" target="_blank"><img src="https://skillicons.dev/icons?i=java&theme=dark" alt="Java" /></a>
   <a href="https://www.python.org/" target="_blank"><img src="https://skillicons.dev/icons?i=py&theme=dark" alt="Python" /></a>
   <a href="https://www.typescriptlang.org/" target="_blank"><img src="https://skillicons.dev/icons?i=ts&theme=dark" alt="TypeScript" /></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://skillicons.dev/icons?i=js&theme=dark" alt="JavaScript" /></a>
+  <a href="https://dev.java/" target="_blank"><img src="https://skillicons.dev/icons?i=java&theme=dark" alt="Java" /></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img src="https://skillicons.dev/icons?i=html&theme=dark" alt="HTML5" /></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img src="https://skillicons.dev/icons?i=css&theme=dark" alt="CSS3" /></a>
 </p>
@@ -82,8 +82,6 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University) focused
   <a href="https://pytorch.org/" target="_blank"><img src="https://skillicons.dev/icons?i=pytorch&theme=dark" alt="PyTorch" /></a>
   <a href="https://www.tensorflow.org/" target="_blank"><img src="https://skillicons.dev/icons?i=tensorflow&theme=dark" alt="TensorFlow" /></a>
   <a href="https://scikit-learn.org/" target="_blank"><img src="https://skillicons.dev/icons?i=sklearn&theme=dark" alt="Scikit-Learn" /></a>
-  <a href="https://opencv.org/" target="_blank"><img src="https://skillicons.dev/icons?i=opencv&theme=dark" alt="OpenCV" /></a>
-  <a href="https://www.anaconda.com/" target="_blank"><img src="https://skillicons.dev/icons?i=anaconda&theme=dark" alt="Anaconda" /></a>
   <br />
   <a href="https://github.com/pgvector/pgvector" target="_blank"><img src="https://img.shields.io/badge/pgvector-HNSW_Vector_Search-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="pgvector" /></a>
   <a href="https://qdrant.tech/" target="_blank"><img src="https://img.shields.io/badge/Qdrant-Vector_Engine-DC2626?style=for-the-badge&logo=qdrant&logoColor=white" alt="Qdrant" /></a>
@@ -94,8 +92,6 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University) focused
 <p align="center">
   <b>Frameworks, Frontend & Real-time:</b><br />
   <a href="https://fastapi.tiangolo.com/" target="_blank"><img src="https://skillicons.dev/icons?i=fastapi&theme=dark" alt="FastAPI" /></a>
-  <a href="https://spring.io/" target="_blank"><img src="https://skillicons.dev/icons?i=spring&theme=dark" alt="Spring Boot" /></a>
-  <a href="https://expressjs.com/" target="_blank"><img src="https://skillicons.dev/icons?i=express&theme=dark" alt="Express" /></a>
   <a href="https://nextjs.org/" target="_blank"><img src="https://skillicons.dev/icons?i=nextjs&theme=dark" alt="Next.js" /></a>
   <a href="https://react.dev/" target="_blank"><img src="https://skillicons.dev/icons?i=react&theme=dark" alt="React" /></a>
   <a href="https://vitejs.dev/" target="_blank"><img src="https://skillicons.dev/icons?i=vite&theme=dark" alt="Vite" /></a>
@@ -107,10 +103,8 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University) focused
   <b>Databases, Vector Stores & DevOps:</b><br />
   <a href="https://www.postgresql.org/" target="_blank"><img src="https://skillicons.dev/icons?i=postgres&theme=dark" alt="PostgreSQL" /></a>
   <a href="https://redis.io/" target="_blank"><img src="https://skillicons.dev/icons?i=redis&theme=dark" alt="Redis" /></a>
-  <a href="https://kafka.apache.org/" target="_blank"><img src="https://skillicons.dev/icons?i=kafka&theme=dark" alt="Kafka" /></a>
-  <a href="https://www.kernel.org/" target="_blank"><img src="https://skillicons.dev/icons?i=linux&theme=dark" alt="Linux" /></a>
+  <a href="https://firebase.google.com/" target="_blank"><img src="https://skillicons.dev/icons?i=firebase&theme=dark" alt="Firebase" /></a>
   <a href="https://www.docker.com/" target="_blank"><img src="https://skillicons.dev/icons?i=docker&theme=dark" alt="Docker" /></a>
-  <a href="https://kubernetes.io/" target="_blank"><img src="https://skillicons.dev/icons?i=kubernetes&theme=dark" alt="Kubernetes" /></a>
   <a href="https://git-scm.com/" target="_blank"><img src="https://skillicons.dev/icons?i=git&theme=dark" alt="Git" /></a>
   <a href="https://github.com/features/actions" target="_blank"><img src="https://skillicons.dev/icons?i=githubactions&theme=dark" alt="GitHub Actions" /></a>
   <a href="https://vercel.com/" target="_blank"><img src="https://skillicons.dev/icons?i=vercel&theme=dark" alt="Vercel" /></a>
