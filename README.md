@@ -69,8 +69,8 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University) focused
 
 <p align="center">
   <b>Languages & Core:</b><br />
-  <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank"><img src="https://skillicons.dev/icons?i=c&theme=dark" alt="C" /></a>
   <a href="https://dev.java/" target="_blank"><img src="https://skillicons.dev/icons?i=java&theme=dark" alt="Java" /></a>
+  <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank"><img src="https://skillicons.dev/icons?i=c&theme=dark" alt="C" /></a>
   <a href="https://www.python.org/" target="_blank"><img src="https://skillicons.dev/icons?i=py&theme=dark" alt="Python" /></a>
   <a href="https://www.typescriptlang.org/" target="_blank"><img src="https://skillicons.dev/icons?i=ts&theme=dark" alt="TypeScript" /></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://skillicons.dev/icons?i=js&theme=dark" alt="JavaScript" /></a>
