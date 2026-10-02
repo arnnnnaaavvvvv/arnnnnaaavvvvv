@@ -68,51 +68,51 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University) focused
 <div align="center">
 
 <p align="center">
-  <sub><b>LANGUAGES & CORE</b></sub><br />
-  <a href="https://dev.java/" target="_blank"><img src="https://img.shields.io/badge/Java-11151c?style=for-the-badge&logo=openjdk&logoColor=ED8B00" alt="Java" /></a>
-  <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank"><img src="https://img.shields.io/badge/C-11151c?style=for-the-badge&logo=c&logoColor=A8B9CC" alt="C" /></a>
-  <a href="https://www.python.org/" target="_blank"><img src="https://img.shields.io/badge/Python-11151c?style=for-the-badge&logo=python&logoColor=3776AB" alt="Python" /></a>
-  <a href="https://www.typescriptlang.org/" target="_blank"><img src="https://img.shields.io/badge/TypeScript-11151c?style=for-the-badge&logo=typescript&logoColor=3178C6" alt="TypeScript" /></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://img.shields.io/badge/JavaScript-11151c?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript" /></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img src="https://img.shields.io/badge/HTML5-11151c?style=for-the-badge&logo=html5&logoColor=E34F26" alt="HTML5" /></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img src="https://img.shields.io/badge/CSS3-11151c?style=for-the-badge&logo=css3&logoColor=1572B6" alt="CSS3" /></a>
+  <b>Languages & Core:</b><br />
+  <a href="https://dev.java/" target="_blank"><img src="https://skillicons.dev/icons?i=java&theme=dark" alt="Java" /></a>
+  <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank"><img src="https://skillicons.dev/icons?i=c&theme=dark" alt="C" /></a>
+  <a href="https://www.python.org/" target="_blank"><img src="https://skillicons.dev/icons?i=py&theme=dark" alt="Python" /></a>
+  <a href="https://www.typescriptlang.org/" target="_blank"><img src="https://skillicons.dev/icons?i=ts&theme=dark" alt="TypeScript" /></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://skillicons.dev/icons?i=js&theme=dark" alt="JavaScript" /></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img src="https://skillicons.dev/icons?i=html&theme=dark" alt="HTML5" /></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img src="https://skillicons.dev/icons?i=css&theme=dark" alt="CSS3" /></a>
 </p>
 
 <p align="center">
-  <sub><b>AI / MACHINE LEARNING / VECTOR INFRASTRUCTURE</b></sub><br />
-  <a href="https://pytorch.org/" target="_blank"><img src="https://img.shields.io/badge/PyTorch-11151c?style=for-the-badge&logo=pytorch&logoColor=EE4C2C" alt="PyTorch" /></a>
-  <a href="https://www.tensorflow.org/" target="_blank"><img src="https://img.shields.io/badge/TensorFlow-11151c?style=for-the-badge&logo=tensorflow&logoColor=FF6F00" alt="TensorFlow" /></a>
-  <a href="https://scikit-learn.org/" target="_blank"><img src="https://img.shields.io/badge/scikit--learn-11151c?style=for-the-badge&logo=scikitlearn&logoColor=F7931E" alt="scikit-learn" /></a>
-  <a href="https://github.com/pgvector/pgvector" target="_blank"><img src="https://img.shields.io/badge/pgvector-11151c?style=for-the-badge&logo=postgresql&logoColor=4169E1" alt="pgvector" /></a>
-  <a href="https://github.com/nmslib/hnswlib" target="_blank"><img src="https://img.shields.io/badge/HNSW_Vector_Search-11151c?style=for-the-badge&logo=databricks&logoColor=FF3621" alt="HNSW Vector Search" /></a>
-  <a href="https://qdrant.tech/" target="_blank"><img src="https://img.shields.io/badge/Qdrant-11151c?style=for-the-badge&logo=qdrant&logoColor=DC2626" alt="Qdrant" /></a>
-  <a href="https://openai.com/" target="_blank"><img src="https://img.shields.io/badge/OpenAI_API-11151c?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI API" /></a>
-  <a href="https://anthropic.com/" target="_blank"><img src="https://img.shields.io/badge/Claude-11151c?style=for-the-badge&logo=anthropic&logoColor=D97706" alt="Claude" /></a>
+  <b>AI / Machine Learning / Vector Infrastructure:</b><br />
+  <a href="https://pytorch.org/" target="_blank"><img src="https://skillicons.dev/icons?i=pytorch&theme=dark" alt="PyTorch" /></a>
+  <a href="https://www.tensorflow.org/" target="_blank"><img src="https://skillicons.dev/icons?i=tensorflow&theme=dark" alt="TensorFlow" /></a>
+  <a href="https://scikit-learn.org/" target="_blank"><img src="https://skillicons.dev/icons?i=sklearn&theme=dark" alt="scikit-learn" /></a>
+  <a href="https://github.com/pgvector/pgvector" target="_blank"><img src="assets/icons/pgvector.svg" width="48" height="48" alt="pgvector" /></a>
+  <a href="https://github.com/nmslib/hnswlib" target="_blank"><img src="assets/icons/hnsw.svg" width="48" height="48" alt="HNSW Vector Search" /></a>
+  <a href="https://qdrant.tech/" target="_blank"><img src="assets/icons/qdrant.svg" width="48" height="48" alt="Qdrant" /></a>
+  <a href="https://openai.com/" target="_blank"><img src="assets/icons/openai.svg" width="48" height="48" alt="OpenAI API" /></a>
+  <a href="https://anthropic.com/" target="_blank"><img src="assets/icons/claude.svg" width="48" height="48" alt="Claude" /></a>
 </p>
 
 <p align="center">
-  <sub><b>FRAMEWORKS / FRONTEND / REAL-TIME</b></sub><br />
-  <a href="https://react.dev/" target="_blank"><img src="https://img.shields.io/badge/React-11151c?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" /></a>
-  <a href="https://nextjs.org/" target="_blank"><img src="https://img.shields.io/badge/Next.js-11151c?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" /></a>
-  <a href="https://fastapi.tiangolo.com/" target="_blank"><img src="https://img.shields.io/badge/FastAPI-11151c?style=for-the-badge&logo=fastapi&logoColor=009688" alt="FastAPI" /></a>
-  <a href="https://vitejs.dev/" target="_blank"><img src="https://img.shields.io/badge/Vite-11151c?style=for-the-badge&logo=vite&logoColor=646CFF" alt="Vite" /></a>
-  <a href="https://tailwindcss.com/" target="_blank"><img src="https://img.shields.io/badge/Tailwind_CSS-11151c?style=for-the-badge&logo=tailwindcss&logoColor=06B6D4" alt="Tailwind CSS" /></a>
-  <a href="https://threejs.org/" target="_blank"><img src="https://img.shields.io/badge/Three.js-11151c?style=for-the-badge&logo=threedotjs&logoColor=white" alt="Three.js" /></a>
+  <b>Frameworks / Frontend / Real-time:</b><br />
+  <a href="https://react.dev/" target="_blank"><img src="https://skillicons.dev/icons?i=react&theme=dark" alt="React" /></a>
+  <a href="https://nextjs.org/" target="_blank"><img src="https://skillicons.dev/icons?i=nextjs&theme=dark" alt="Next.js" /></a>
+  <a href="https://fastapi.tiangolo.com/" target="_blank"><img src="https://skillicons.dev/icons?i=fastapi&theme=dark" alt="FastAPI" /></a>
+  <a href="https://vitejs.dev/" target="_blank"><img src="https://skillicons.dev/icons?i=vite&theme=dark" alt="Vite" /></a>
+  <a href="https://tailwindcss.com/" target="_blank"><img src="https://skillicons.dev/icons?i=tailwind&theme=dark" alt="Tailwind CSS" /></a>
+  <a href="https://threejs.org/" target="_blank"><img src="https://skillicons.dev/icons?i=threejs&theme=dark" alt="Three.js" /></a>
 </p>
 
 <p align="center">
-  <sub><b>DATABASES & INFRASTRUCTURE</b></sub><br />
-  <a href="https://www.postgresql.org/" target="_blank"><img src="https://img.shields.io/badge/PostgreSQL-11151c?style=for-the-badge&logo=postgresql&logoColor=4169E1" alt="PostgreSQL" /></a>
-  <a href="https://redis.io/" target="_blank"><img src="https://img.shields.io/badge/Redis-11151c?style=for-the-badge&logo=redis&logoColor=DC382D" alt="Redis" /></a>
-  <a href="https://firebase.google.com/" target="_blank"><img src="https://img.shields.io/badge/Firebase-11151c?style=for-the-badge&logo=firebase&logoColor=FFCA28" alt="Firebase" /></a>
-  <a href="https://www.docker.com/" target="_blank"><img src="https://img.shields.io/badge/Docker-11151c?style=for-the-badge&logo=docker&logoColor=2496ED" alt="Docker" /></a>
+  <b>Databases & Infrastructure:</b><br />
+  <a href="https://www.postgresql.org/" target="_blank"><img src="https://skillicons.dev/icons?i=postgres&theme=dark" alt="PostgreSQL" /></a>
+  <a href="https://redis.io/" target="_blank"><img src="https://skillicons.dev/icons?i=redis&theme=dark" alt="Redis" /></a>
+  <a href="https://firebase.google.com/" target="_blank"><img src="https://skillicons.dev/icons?i=firebase&theme=dark" alt="Firebase" /></a>
+  <a href="https://www.docker.com/" target="_blank"><img src="https://skillicons.dev/icons?i=docker&theme=dark" alt="Docker" /></a>
 </p>
 
 <p align="center">
-  <sub><b>DEVOPS / VERSION CONTROL / DEPLOYMENT</b></sub><br />
-  <a href="https://git-scm.com/" target="_blank"><img src="https://img.shields.io/badge/Git-11151c?style=for-the-badge&logo=git&logoColor=F05032" alt="Git" /></a>
-  <a href="https://github.com/features/actions" target="_blank"><img src="https://img.shields.io/badge/GitHub_Actions-11151c?style=for-the-badge&logo=githubactions&logoColor=2088FF" alt="GitHub Actions" /></a>
-  <a href="https://vercel.com/" target="_blank"><img src="https://img.shields.io/badge/Vercel-11151c?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" /></a>
+  <b>DevOps / Version Control / Deployment:</b><br />
+  <a href="https://git-scm.com/" target="_blank"><img src="https://skillicons.dev/icons?i=git&theme=dark" alt="Git" /></a>
+  <a href="https://github.com/features/actions" target="_blank"><img src="https://skillicons.dev/icons?i=githubactions&theme=dark" alt="GitHub Actions" /></a>
+  <a href="https://vercel.com/" target="_blank"><img src="https://skillicons.dev/icons?i=vercel&theme=dark" alt="Vercel" /></a>
 </p>
 
 </div>
