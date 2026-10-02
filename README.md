@@ -126,39 +126,39 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University) focused
     <td width="50%" valign="top">
       <h4>⚡ Full-Stack & Systems Engineering</h4>
       <ul>
-        <li><b>Frontend:</b> React 19, Next.js 14, Vite, Tailwind CSS, Leaflet.js, Monaco Editor, Three.js</li>
-        <li><b>Backend Services:</b> FastAPI (Python 3.11+), Spring Boot (Java), Express.js (Node.js)</li>
-        <li><b>Protocols & Real-Time:</b> WebSockets, Server-Sent Events, Redis Pub/Sub, Redis Streams, Celery Task Queues</li>
-        <li><b>Performance:</b> Code-splitting, sub-second TTFB, offline PWA caching, async DMA pipelines</li>
+        <li><b>Frontend Architectures:</b> React 19, Next.js 14 (App Router), Vite, Tailwind CSS, Leaflet.js, Three.js, Monaco Diff Viewer</li>
+        <li><b>Backend Services:</b> FastAPI (Python 3.11+ async gateway), Next.js API Routes, Node.js CLI tooling</li>
+        <li><b>Protocols & Event Buses:</b> WebSockets, Server-Sent Events (SSE), Redis Streams, Celery Distributed Task Queues</li>
+        <li><b>Quantitative Engines:</b> Vectorized backtesting pipelines (NumPy / Pandas, 540k ticks/sec), async DMA execution</li>
       </ul>
     </td>
     <td width="50%" valign="top">
-      <h4>🤖 Applied AI & Explainable Systems</h4>
+      <h4>🤖 Applied AI & Deep Learning Systems</h4>
       <ul>
-        <li><b>Causal Reasoning & ASTs:</b> Tree-sitter AST syntax chunking, semantic git diff analysis, calibrated confidence scoring</li>
-        <li><b>Vector Search & RAG:</b> PostgreSQL + pgvector (HNSW), Qdrant vector engine, hybrid dense/sparse retrieval</li>
-        <li><b>Model Orchestration:</b> Claude 3.5 Sonnet, OpenAI (GPT-4o & embeddings), Gemini API, structured tool calling</li>
-        <li><b>Evaluations:</b> Grounded accuracy, deterministic verification ASTs, multi-factor risk attribution</li>
+        <li><b>Causal Reasoning & ASTs:</b> Tree-sitter AST structural chunking, semantic git diff causality, calibrated confidence scoring</li>
+        <li><b>Vector Search & RAG:</b> PostgreSQL + pgvector (HNSW cosine indexing), Qdrant vector engine, dense semantic embeddings</li>
+        <li><b>Model Orchestration:</b> Claude 3.5 Sonnet, OpenAI (embeddings & GPT-4o), structured tool calling, deterministic verification</li>
+        <li><b>Deep Learning & Biosignals:</b> PyTorch & TensorFlow models, EEG signal processing (SciPy, ssqueezepy continuous wavelets)</li>
       </ul>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h4>🗺️ Geospatial Data & Real-Time Engines</h4>
+      <h4>🗺️ Geospatial Telemetry & Real-Time Routing</h4>
       <ul>
-        <li><b>Spatial Databases:</b> PostgreSQL, PostGIS, TimescaleDB, Redis Streams</li>
-        <li><b>GIS & Routing:</b> Shapely, Overpass OSM API, dynamic bypass polyline calculation, Leaflet.js</li>
-        <li><b>Environmental Fusion:</b> Live IMD meteorological telemetry, contour slope radars, multi-zone classification</li>
-        <li><b>Physiological Risk:</b> Acute Mountain Sickness (AMS) hypoxia elevation curves</li>
+        <li><b>Spatial & Stream DBs:</b> PostgreSQL 16, PostGIS, TimescaleDB, Redis Streams for sub-100ms event delivery</li>
+        <li><b>GIS & Path Optimization:</b> Shapely, Overpass OSM API, dynamic bypass polyline calculation, Leaflet.js offline GIS</li>
+        <li><b>Environmental Fusion:</b> Live IMD meteorological telemetry, contour slope radars, multi-zone risk classification</li>
+        <li><b>Physiological Risk:</b> Acute Mountain Sickness (AMS) altitude hypoxia curve modeling</li>
       </ul>
     </td>
     <td width="50%" valign="top">
       <h4>⚙️ Infrastructure, Security & Reliability</h4>
       <ul>
-        <li><b>Containers & Orchestration:</b> Docker, Docker Compose multi-container networks, Kubernetes manifests</li>
-        <li><b>CI/CD & Automation:</b> GitHub Actions multi-stage build & test pipelines, Vercel production edge</li>
-        <li><b>Cryptographic Security:</b> AES-256 envelope vault encryption, OAuth 2.0, Firebase Admin SDK, JWT</li>
-        <li><b>Observability:</b> Structured logging, health check endpoints, automated test suites (pytest)</li>
+        <li><b>Containers & Microservices:</b> Docker, Docker Compose multi-container networks, isolated worker & Redis services</li>
+        <li><b>CI/CD & Edge Deployment:</b> GitHub Actions automated test & lint pipelines, Vercel production edge</li>
+        <li><b>Static Security Auditing:</b> Custom AST CLI auditor (MEJOR) for secret gateway leaks and memory profiling</li>
+        <li><b>Security & Auth:</b> AES-256 Demat envelope encryption, OAuth 2.0, Firebase Admin SDK, JWT, pytest test suites</li>
       </ul>
     </td>
   </tr>
