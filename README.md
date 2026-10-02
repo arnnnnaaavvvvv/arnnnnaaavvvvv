@@ -74,9 +74,24 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University) focused
   <a href="https://www.typescriptlang.org/" target="_blank"><img src="https://skillicons.dev/icons?i=ts&theme=dark" alt="TypeScript" /></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://skillicons.dev/icons?i=js&theme=dark" alt="JavaScript" /></a>
   <a href="https://isocpp.org/" target="_blank"><img src="https://skillicons.dev/icons?i=cpp&theme=dark" alt="C++" /></a>
-  <a href="https://www.postgresql.org/" target="_blank"><img src="https://skillicons.dev/icons?i=postgres&theme=dark" alt="SQL" /></a>
+  <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank"><img src="https://skillicons.dev/icons?i=c&theme=dark" alt="C" /></a>
+  <a href="https://www.gnu.org/software/bash/" target="_blank"><img src="https://skillicons.dev/icons?i=bash&theme=dark" alt="Bash" /></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img src="https://skillicons.dev/icons?i=html&theme=dark" alt="HTML5" /></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img src="https://skillicons.dev/icons?i=css&theme=dark" alt="CSS3" /></a>
+</p>
+
+<p align="center">
+  <b>Applied AI, Machine Learning & Quantitative Systems:</b><br />
+  <a href="https://pytorch.org/" target="_blank"><img src="https://skillicons.dev/icons?i=pytorch&theme=dark" alt="PyTorch" /></a>
+  <a href="https://www.tensorflow.org/" target="_blank"><img src="https://skillicons.dev/icons?i=tensorflow&theme=dark" alt="TensorFlow" /></a>
+  <a href="https://scikit-learn.org/" target="_blank"><img src="https://skillicons.dev/icons?i=sklearn&theme=dark" alt="Scikit-Learn" /></a>
+  <a href="https://opencv.org/" target="_blank"><img src="https://skillicons.dev/icons?i=opencv&theme=dark" alt="OpenCV" /></a>
+  <a href="https://www.anaconda.com/" target="_blank"><img src="https://skillicons.dev/icons?i=anaconda&theme=dark" alt="Anaconda" /></a>
+  <br />
+  <a href="https://github.com/pgvector/pgvector" target="_blank"><img src="https://img.shields.io/badge/pgvector-HNSW_Vector_Search-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="pgvector" /></a>
+  <a href="https://qdrant.tech/" target="_blank"><img src="https://img.shields.io/badge/Qdrant-Vector_Engine-DC2626?style=for-the-badge&logo=qdrant&logoColor=white" alt="Qdrant" /></a>
+  <a href="https://anthropic.com/" target="_blank"><img src="https://img.shields.io/badge/Claude_3.5_Sonnet-D97706?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude 3.5" /></a>
+  <a href="https://openai.com/" target="_blank"><img src="https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI" /></a>
 </p>
 
 <p align="center">
@@ -95,7 +110,8 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University) focused
   <b>Databases, Vector Stores & DevOps:</b><br />
   <a href="https://www.postgresql.org/" target="_blank"><img src="https://skillicons.dev/icons?i=postgres&theme=dark" alt="PostgreSQL" /></a>
   <a href="https://redis.io/" target="_blank"><img src="https://skillicons.dev/icons?i=redis&theme=dark" alt="Redis" /></a>
-  <a href="https://firebase.google.com/" target="_blank"><img src="https://skillicons.dev/icons?i=firebase&theme=dark" alt="Firebase" /></a>
+  <a href="https://kafka.apache.org/" target="_blank"><img src="https://skillicons.dev/icons?i=kafka&theme=dark" alt="Kafka" /></a>
+  <a href="https://www.kernel.org/" target="_blank"><img src="https://skillicons.dev/icons?i=linux&theme=dark" alt="Linux" /></a>
   <a href="https://www.docker.com/" target="_blank"><img src="https://skillicons.dev/icons?i=docker&theme=dark" alt="Docker" /></a>
   <a href="https://kubernetes.io/" target="_blank"><img src="https://skillicons.dev/icons?i=kubernetes&theme=dark" alt="Kubernetes" /></a>
   <a href="https://git-scm.com/" target="_blank"><img src="https://skillicons.dev/icons?i=git&theme=dark" alt="Git" /></a>
