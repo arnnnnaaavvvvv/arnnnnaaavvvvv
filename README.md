@@ -11,6 +11,8 @@
 <p align="center">
   <a href="https://github.com/arnnnnaaavvvvv"><img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
   &nbsp;
+  <a href="https://arnavsinghportfolio.vercel.app" target="_blank"><img src="https://img.shields.io/badge/Portfolio-D97706?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio" /></a>
+  &nbsp;
   <a href="https://www.linkedin.com/in/arnav-singh-986722252"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   &nbsp;
   <a href="mailto:arnav152007@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
@@ -236,6 +238,21 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University) focused
 
 ---
 
+#### **5. Personal Portfolio & Systems Engineering Showcase**
+> Ultra-responsive personal portfolio and systems architecture showcase engineered with Next.js 14 App Router, TypeScript, Framer Motion, and Lenis smooth scrolling. Implements an obsidian dark-mode palette (`#0d1117`), amber gold precision highlights (`#d8a94e`), quintic ease-out micro-interactions, custom magnetic trailing cursor, and interactive systems deep-dives.
+
+<p>
+  <img src="https://img.shields.io/badge/Next.js_14.2-App_Router-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Framer_Motion-13.4-black?style=flat-square&logo=framer&logoColor=white" alt="Framer Motion" />
+  <img src="https://img.shields.io/badge/Lenis-Smooth_Scroll-black?style=flat-square" alt="Lenis" />
+  <img src="https://img.shields.io/badge/Vercel-Production_Edge-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel" />
+</p>
+
+[→ Live Portfolio Website](https://arnavsinghportfolio.vercel.app) &nbsp;|&nbsp; [→ Source Code](https://github.com/arnnnnaaavvvvv/PORTFOLIO) &nbsp;|&nbsp; [→ Architecture Spec](https://github.com/arnnnnaaavvvvv/PORTFOLIO/blob/main/ARCHITECTURE.md)
+
+---
+
 ## 📊 GitHub Contribution & Activity
 
 <div align="center">
@@ -269,6 +286,10 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University) focused
 ## 🤝 Connect With Me
 
 <p align="center">
+  <a href="https://arnavsinghportfolio.vercel.app" target="_blank">
+    <img src="https://skillicons.dev/icons?i=vercel&theme=dark" alt="Portfolio" />
+  </a>
+  &nbsp;&nbsp;
   <a href="https://www.linkedin.com/in/arnav-singh-986722252" target="_blank">
     <img src="https://skillicons.dev/icons?i=linkedin&theme=dark" alt="LinkedIn" />
   </a>
