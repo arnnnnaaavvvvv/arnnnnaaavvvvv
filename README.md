@@ -241,36 +241,6 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University) focused
 
 ---
 
-#### **5. AI Developer Copilot & Career Intelligence Platform**
-> Full-stack talent intelligence engine parsing resumes, job descriptions, and public profile data (GitHub & LinkedIn) to power semantic ATS scoring, vector-based skill gap identification, salary regression predictions, and mock interview question generation using dense vector embeddings and HNSW similarity search.
-
-<p>
-  <img src="https://img.shields.io/badge/Next.js_14-App_Router-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Qdrant-HNSW_Vector_Search-DC2626?style=flat-square&logo=qdrant&logoColor=white" alt="Qdrant" />
-  <img src="https://img.shields.io/badge/RAG_Pipeline-Semantic_Matching-059669?style=flat-square&logo=databricks&logoColor=white" alt="RAG" />
-  <img src="https://img.shields.io/badge/FastAPI-Microservice-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
-</p>
-
-[→ Live Production Demo](https://rlg-platform.vercel.app/) &nbsp;|&nbsp; [→ Source Code](https://github.com/arnnnnaaavvvvv/AI-Developer-Copilot-Career-Intelligence-Platform) &nbsp;|&nbsp; [→ Architecture Spec](https://github.com/arnnnnaaavvvvv/AI-Developer-Copilot-Career-Intelligence-Platform/blob/main/ARCHITECTURE.md)
-
----
-
-#### **6. Personal Portfolio & Systems Engineering Showcase**
-> Ultra-responsive personal portfolio and systems architecture showcase engineered with Next.js 14 App Router, TypeScript, Framer Motion, and Lenis smooth scrolling. Implements an obsidian dark-mode palette (`#0d1117`), amber gold precision highlights (`#d8a94e`), quintic ease-out micro-interactions, custom magnetic trailing cursor, and interactive systems deep-dives.
-
-<p>
-  <img src="https://img.shields.io/badge/Next.js_14.2-App_Router-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Framer_Motion-13.4-black?style=flat-square&logo=framer&logoColor=white" alt="Framer Motion" />
-  <img src="https://img.shields.io/badge/Lenis-Smooth_Scroll-black?style=flat-square" alt="Lenis" />
-  <img src="https://img.shields.io/badge/Vercel-Production_Edge-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel" />
-</p>
-
-[→ Live Portfolio Website](https://arnavsinghportfolio.vercel.app) &nbsp;|&nbsp; [→ Source Code](https://github.com/arnnnnaaavvvvv/PORTFOLIO) &nbsp;|&nbsp; [→ Architecture Spec](https://github.com/arnnnnaaavvvvv/PORTFOLIO/blob/main/ARCHITECTURE.md)
-
----
-
 ## 📊 GitHub Contribution & Activity
 
 <div align="center">
