@@ -61,7 +61,7 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University) focused
 - **Applied AI & Explainability:** Architecting causal reasoning and retrieval-augmented generation (RAG) pipelines backed by **Tree-sitter AST parsing**, **pgvector/Qdrant** vector search, semantic embeddings, and deterministic risk AST evaluators where verified traceability takes precedence over hallucination.
 - **Frontend & GIS:** Crafting ultra-responsive, mobile-first interfaces using **React 19**, **Next.js 14**, **Vite**, **Tailwind CSS**, and **Leaflet.js** with curated dark-mode design systems (Midnight Navy, Deep Slate, and Emerald tokens).
 
-> **Current Focus:** Engineering high-resilience quantitative engines, developer intelligence platforms, distributed real-time mesh networks, and deterministic geospatial routing systems targeting high-signal Software Engineering and Systems roles.
+> **Current Focus:** Engineering high-resilience quantitative engines, clinical EEG biosignal telemetry, developer intelligence platforms, distributed real-time mesh networks, and deterministic geospatial routing systems targeting high-signal Software Engineering and Systems roles.
 
 ---
 
@@ -206,7 +206,25 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University) focused
 
 ---
 
-#### **3. SIRUS — Enterprise Multi-Tenant Quantitative Engine & Algorithmic Trading Platform**
+#### **3. NeuroSense — Clinical EEG & Polysomnography Telemetry Intelligence**
+> Clinical-grade electroencephalography (EEG) and polysomnography (PSG) telemetry intelligence platform bridging automated microvolt signal processing, deep spatial-frequency representation learning, and deterministic clinical decision support. Detects pre-onset risk trajectories (60–90s lookback windows prior to acute obstructive sleep apnea or panic onset), quantifies multi-window cortical arousal velocity ($\Delta\text{Beta}\%$) and acceleration ($\Delta^2$), and renders real-time 128 Hz calibrated microvolt waveforms ($\pm 60\,\mu\text{V}$) across standard 10–20 derivations (Fp1, F3, Fz, F4, Cz, Pz, O1). Features 128×128 STFT spectrogram matrices, quantitative cranial EMG/EOG artifact screening, dual-head multi-task CNN (Özdemir Conv2D backbone) with Leave-One-Subject-Out Cross-Validation (93.8% accuracy), and zero-hallucination clinical guideline RAG grounded in AASM, NICE, and APA standards.
+
+<p>
+  <img src="https://img.shields.io/badge/FastAPI-Python_3.11+-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/Next.js_14.2-App_Router-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/PyTorch_2.2+-Conv2D_Backbone-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/128Hz_EEG-Calibrated_Microvolt-8B5CF6?style=flat-square" alt="128Hz EEG" />
+  <img src="https://img.shields.io/badge/STFT_Spectrogram-128x128_Matrices-0284C7?style=flat-square&logo=scipy&logoColor=white" alt="STFT Spectrogram" />
+  <img src="https://img.shields.io/badge/Clinical_RAG-AASM_%7C_NICE_%7C_APA-059669?style=flat-square" alt="Clinical RAG" />
+  <img src="https://img.shields.io/badge/LOSO--CV-93.8%25_Accuracy-7C3AED?style=flat-square&logo=scikitlearn&logoColor=white" alt="LOSO-CV" />
+  <img src="https://img.shields.io/badge/Production-Vercel_Deployed-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel Deployed" />
+</p>
+
+[→ Live Production Demo](https://neurosense-orcin.vercel.app) &nbsp;|&nbsp; [→ Source Code](https://github.com/arnnnnaaavvvvv/NeuroSense) &nbsp;|&nbsp; [→ Architecture Spec](https://github.com/arnnnnaaavvvvv/NeuroSense/blob/main/ARCHITECTURE.md)
+
+---
+
+#### **4. SIRUS — Enterprise Multi-Tenant Quantitative Engine & Algorithmic Trading Platform**
 > High-throughput systematic algorithmic trading SaaS with Direct Market Access (Zerodha Kite, Alpaca, KuCoin, Interactive Brokers, AngelOne, Upstox, Groww). Features sub-100ms vectorized NumPy/Pandas strategy backtesting processing **540,000 ticks/sec**, an AES-256 envelope-encrypted Demat key vault, interactive real-time parameter simulator, Redis Streams event bus, and a Paddle Billing inspired sleek dark interface with Three.js wave particle visuals.
 
 <p>
@@ -223,7 +241,7 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University) focused
 
 ---
 
-#### **4. AI Developer Copilot & Career Intelligence Platform**
+#### **5. AI Developer Copilot & Career Intelligence Platform**
 > Full-stack talent intelligence engine parsing resumes, job descriptions, and public profile data (GitHub & LinkedIn) to power semantic ATS scoring, vector-based skill gap identification, salary regression predictions, and mock interview question generation using dense vector embeddings and HNSW similarity search.
 
 <p>
@@ -238,7 +256,7 @@ I'm a Computer Science undergraduate (B.Tech CSE, Chandigarh University) focused
 
 ---
 
-#### **5. Personal Portfolio & Systems Engineering Showcase**
+#### **6. Personal Portfolio & Systems Engineering Showcase**
 > Ultra-responsive personal portfolio and systems architecture showcase engineered with Next.js 14 App Router, TypeScript, Framer Motion, and Lenis smooth scrolling. Implements an obsidian dark-mode palette (`#0d1117`), amber gold precision highlights (`#d8a94e`), quintic ease-out micro-interactions, custom magnetic trailing cursor, and interactive systems deep-dives.
 
 <p>
