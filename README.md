@@ -29,25 +29,22 @@
 
 <div align="center">
 
-### 🏆 GitHub Achievements
+### 📦 Published NPM Packages & Downloads
 
 <p align="center">
-  <a href="https://github.com/arnnnnaaavvvvv?tab=achievements">
-    <img src="https://github.githubassets.com/images/modules/profile/achievements/pull-shark-bronze.png" width="80" alt="Pull Shark (x2)" title="Pull Shark (x2)" />
+  <a href="https://www.npmjs.com/~arnavvv" target="_blank">
+    <img src="https://img.shields.io/badge/Total%20NPM%20Downloads-1.1k%2B-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="Total NPM Downloads" />
   </a>
   &nbsp;&nbsp;
-  <a href="https://github.com/arnnnnaaavvvvv?tab=achievements">
-    <img src="https://github.githubassets.com/images/modules/profile/achievements/pair-extraordinaire-default.png" width="80" alt="Pair Extraordinaire" title="Pair Extraordinaire" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/arnnnnaaavvvvv?tab=achievements">
-    <img src="https://github.githubassets.com/images/modules/profile/achievements/yolo-default.png" width="80" alt="YOLO" title="YOLO" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/arnnnnaaavvvvv?tab=achievements">
-    <img src="https://github.githubassets.com/images/modules/profile/achievements/quickdraw-default.png" width="80" alt="Quickdraw" title="Quickdraw" />
+  <a href="https://www.npmjs.com/~arnavvv" target="_blank">
+    <img src="https://img.shields.io/badge/Packages%20Published-2-0284c7?style=for-the-badge&logo=npm&logoColor=white" alt="Published Packages" />
   </a>
 </p>
+
+| Package | Description | Latest Version | Total Downloads |
+| :--- | :--- | :---: | :---: |
+| [**`arnav-audit`**](https://www.npmjs.com/package/arnav-audit) | Autonomous internal security, memory leakage & UI/UX auditor | [![version](https://img.shields.io/npm/v/arnav-audit?color=2563eb&style=flat-square&logo=npm)](https://www.npmjs.com/package/arnav-audit) | [![downloads](https://img.shields.io/npm/dt/arnav-audit?color=10b981&style=flat-square&logo=npm&label=downloads)](https://www.npmjs.com/package/arnav-audit) |
+| [**`@arnavvv/deppulse`**](https://www.npmjs.com/package/@arnavvv/deppulse) | Universal dependency maintenance health & upgrade risk intelligence engine | [![version](https://img.shields.io/npm/v/@arnavvv/deppulse?color=2563eb&style=flat-square&logo=npm)](https://www.npmjs.com/package/@arnavvv/deppulse) | [![downloads](https://img.shields.io/npm/dt/@arnavvv/deppulse?color=10b981&style=flat-square&logo=npm&label=downloads)](https://www.npmjs.com/package/@arnavvv/deppulse) |
 
 </div>
 
