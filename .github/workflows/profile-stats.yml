@@ -56,6 +56,10 @@ jobs:
         run: node .github/scripts/format-cards.js
         continue-on-error: true
 
+      - name: Sync Live NPM Package Downloads & Milestone Metrics
+        run: node .github/scripts/update-npm-stats.js
+        continue-on-error: true
+
       - name: Commit and Push Updated Stats
         run: |
           git config --global user.name "github-actions[bot]"

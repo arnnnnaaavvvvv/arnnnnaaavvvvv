@@ -33,11 +33,11 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/~arnavvv" target="_blank">
-    <img src="https://img.shields.io/badge/Total%20NPM%20Downloads-1.1k%2B-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="Total NPM Downloads" />
+    <img src="https://img.shields.io/badge/Total%20NPM%20Downloads-1.5k%2B-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="Total NPM Downloads" />
   </a>
   &nbsp;&nbsp;
   <a href="https://www.npmjs.com/~arnavvv" target="_blank">
-    <img src="https://img.shields.io/badge/Packages%20Published-2-0284c7?style=for-the-badge&logo=npm&logoColor=white" alt="Published Packages" />
+    <img src="https://img.shields.io/badge/Packages%20Published-3-0284c7?style=for-the-badge&logo=npm&logoColor=white" alt="Published Packages" />
   </a>
 </p>
 
@@ -45,6 +45,7 @@
 | :--- | :--- | :---: | :---: |
 | [**`arnav-audit`**](https://www.npmjs.com/package/arnav-audit) | Autonomous internal security, memory leakage & UI/UX auditor | [![version](https://img.shields.io/npm/v/arnav-audit?color=2563eb&style=flat-square&logo=npm)](https://www.npmjs.com/package/arnav-audit) | [![downloads](https://img.shields.io/npm/dt/arnav-audit?color=10b981&style=flat-square&logo=npm&label=downloads)](https://www.npmjs.com/package/arnav-audit) |
 | [**`@arnavvv/deppulse`**](https://www.npmjs.com/package/@arnavvv/deppulse) | Universal dependency maintenance health & upgrade risk intelligence engine | [![version](https://img.shields.io/npm/v/@arnavvv/deppulse?color=2563eb&style=flat-square&logo=npm)](https://www.npmjs.com/package/@arnavvv/deppulse) | [![downloads](https://img.shields.io/npm/dt/@arnavvv/deppulse?color=10b981&style=flat-square&logo=npm&label=downloads)](https://www.npmjs.com/package/@arnavvv/deppulse) |
+| [**`@arnavvv/traceguard`**](https://www.npmjs.com/package/@arnavvv/traceguard) | Deterministic API contract testing & breaking OpenAPI change detection engine | [![version](https://img.shields.io/npm/v/@arnavvv/traceguard?color=2563eb&style=flat-square&logo=npm)](https://www.npmjs.com/package/@arnavvv/traceguard) | [![downloads](https://img.shields.io/npm/dt/@arnavvv/traceguard?color=10b981&style=flat-square&logo=npm&label=downloads)](https://www.npmjs.com/package/@arnavvv/traceguard) |
 
 </div>
 
