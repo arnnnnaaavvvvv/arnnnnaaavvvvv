@@ -33,7 +33,7 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/~arnavvv" target="_blank">
-    <img src="https://img.shields.io/badge/Total%20NPM%20Downloads-1.5k%2B-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="Total NPM Downloads" />
+    <img src="https://img.shields.io/badge/Total%20NPM%20Downloads-2k%2B-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="Total NPM Downloads" />
   </a>
   &nbsp;&nbsp;
   <a href="https://www.npmjs.com/~arnavvv" target="_blank">
